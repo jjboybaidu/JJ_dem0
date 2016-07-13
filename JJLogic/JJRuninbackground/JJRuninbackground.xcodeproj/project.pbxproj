@@ -1,0 +1,260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6532975A1D308003001A6CDB /* JJRuninbackground.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 653297591D308003001A6CDB /* JJRuninbackground.h */; };
+		6532975C1D308003001A6CDB /* JJRuninbackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 6532975B1D308003001A6CDB /* JJRuninbackground.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		653297541D308003001A6CDB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				6532975A1D308003001A6CDB /* JJRuninbackground.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		653297561D308003001A6CDB /* libJJRuninbackground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJRuninbackground.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		653297591D308003001A6CDB /* JJRuninbackground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJRuninbackground.h; sourceTree = "<group>"; };
+		6532975B1D308003001A6CDB /* JJRuninbackground.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJRuninbackground.m; sourceTree = "<group>"; };
+		653297621D30807B001A6CDB /* mute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mute.mp3; sourceTree = "<group>"; };
+		653297631D30807B001A6CDB /* mysong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mysong.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		653297531D308003001A6CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6532974D1D308003001A6CDB = {
+			isa = PBXGroup;
+			children = (
+				653297581D308003001A6CDB /* JJRuninbackground */,
+				653297571D308003001A6CDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		653297571D308003001A6CDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				653297561D308003001A6CDB /* libJJRuninbackground.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		653297581D308003001A6CDB /* JJRuninbackground */ = {
+			isa = PBXGroup;
+			children = (
+				653297621D30807B001A6CDB /* mute.mp3 */,
+				653297631D30807B001A6CDB /* mysong.mp3 */,
+				653297591D308003001A6CDB /* JJRuninbackground.h */,
+				6532975B1D308003001A6CDB /* JJRuninbackground.m */,
+			);
+			path = JJRuninbackground;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		653297551D308003001A6CDB /* JJRuninbackground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6532975F1D308003001A6CDB /* Build configuration list for PBXNativeTarget "JJRuninbackground" */;
+			buildPhases = (
+				653297521D308003001A6CDB /* Sources */,
+				653297531D308003001A6CDB /* Frameworks */,
+				653297541D308003001A6CDB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJRuninbackground;
+			productName = JJRuninbackground;
+			productReference = 653297561D308003001A6CDB /* libJJRuninbackground.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6532974E1D308003001A6CDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jjboybaidu;
+				TargetAttributes = {
+					653297551D308003001A6CDB = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = XD6MAD536B;
+					};
+				};
+			};
+			buildConfigurationList = 653297511D308003001A6CDB /* Build configuration list for PBXProject "JJRuninbackground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6532974D1D308003001A6CDB;
+			productRefGroup = 653297571D308003001A6CDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				653297551D308003001A6CDB /* JJRuninbackground */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		653297521D308003001A6CDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6532975C1D308003001A6CDB /* JJRuninbackground.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6532975D1D308003001A6CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6532975E1D308003001A6CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		653297601D308003001A6CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		653297611D308003001A6CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		653297511D308003001A6CDB /* Build configuration list for PBXProject "JJRuninbackground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6532975D1D308003001A6CDB /* Debug */,
+				6532975E1D308003001A6CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6532975F1D308003001A6CDB /* Build configuration list for PBXNativeTarget "JJRuninbackground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653297601D308003001A6CDB /* Debug */,
+				653297611D308003001A6CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6532974E1D308003001A6CDB /* Project object */;
+}

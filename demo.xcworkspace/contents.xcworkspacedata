@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:JJViewController/JJViewController.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "JJUI">
+      <FileRef
+         location = "group:JJUI/JJTableViewRowAction/JJTableViewRowAction.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJUI/JJLoginregister/JJLoginregister.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJUI/JJNewFeature/JJNewFeature.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJUI/JJSearchbar/JJSearchbar.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJUI/JJShake/JJShake.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "JJLogic">
+      <FileRef
+         location = "group:JJLogic/JJCoreMotion/JJCoreMotion.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJLogic/JJShakeble/JJShakeble.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJLogic/JJRuninbackground/JJRuninbackground.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJLogic/JJFormat/JJFormat.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJLogic/JJEncrypt/JJEncrypt.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJLogic/JJCommand/JJCommand.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJLogic/JJBLECentralManager/JJBLECentralManager.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJLogic/JJAddressbook/JJAddressbook.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>

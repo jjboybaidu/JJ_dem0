@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25296A741D347AEE000341B8 /* JJShakeble.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25296A731D347AEE000341B8 /* JJShakeble.h */; };
+		25296A761D347AEE000341B8 /* JJShakeble.m in Sources */ = {isa = PBXBuildFile; fileRef = 25296A751D347AEE000341B8 /* JJShakeble.m */; };
+		25296A841D3482BB000341B8 /* JJCentralble.m in Sources */ = {isa = PBXBuildFile; fileRef = 25296A831D3482BB000341B8 /* JJCentralble.m */; };
+		25296A871D34831E000341B8 /* JJFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 25296A861D34831E000341B8 /* JJFormat.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25296A6E1D347AEE000341B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				25296A741D347AEE000341B8 /* JJShakeble.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		25296A701D347AEE000341B8 /* libJJShakeble.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJShakeble.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		25296A731D347AEE000341B8 /* JJShakeble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJShakeble.h; sourceTree = "<group>"; };
+		25296A751D347AEE000341B8 /* JJShakeble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJShakeble.m; sourceTree = "<group>"; };
+		25296A821D3482BB000341B8 /* JJCentralble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCentralble.h; sourceTree = "<group>"; };
+		25296A831D3482BB000341B8 /* JJCentralble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCentralble.m; sourceTree = "<group>"; };
+		25296A851D34831E000341B8 /* JJFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJFormat.h; sourceTree = "<group>"; };
+		25296A861D34831E000341B8 /* JJFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJFormat.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25296A6D1D347AEE000341B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25296A671D347AEE000341B8 = {
+			isa = PBXGroup;
+			children = (
+				25296A721D347AEE000341B8 /* JJShakeble */,
+				25296A711D347AEE000341B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25296A711D347AEE000341B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25296A701D347AEE000341B8 /* libJJShakeble.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25296A721D347AEE000341B8 /* JJShakeble */ = {
+			isa = PBXGroup;
+			children = (
+				25296A821D3482BB000341B8 /* JJCentralble.h */,
+				25296A831D3482BB000341B8 /* JJCentralble.m */,
+				25296A731D347AEE000341B8 /* JJShakeble.h */,
+				25296A751D347AEE000341B8 /* JJShakeble.m */,
+				25296A851D34831E000341B8 /* JJFormat.h */,
+				25296A861D34831E000341B8 /* JJFormat.m */,
+			);
+			path = JJShakeble;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25296A6F1D347AEE000341B8 /* JJShakeble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25296A791D347AEE000341B8 /* Build configuration list for PBXNativeTarget "JJShakeble" */;
+			buildPhases = (
+				25296A6C1D347AEE000341B8 /* Sources */,
+				25296A6D1D347AEE000341B8 /* Frameworks */,
+				25296A6E1D347AEE000341B8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJShakeble;
+			productName = JJShakeble;
+			productReference = 25296A701D347AEE000341B8 /* libJJShakeble.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25296A681D347AEE000341B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = farbell;
+				TargetAttributes = {
+					25296A6F1D347AEE000341B8 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 25296A6B1D347AEE000341B8 /* Build configuration list for PBXProject "JJShakeble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 25296A671D347AEE000341B8;
+			productRefGroup = 25296A711D347AEE000341B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25296A6F1D347AEE000341B8 /* JJShakeble */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25296A6C1D347AEE000341B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25296A761D347AEE000341B8 /* JJShakeble.m in Sources */,
+				25296A841D3482BB000341B8 /* JJCentralble.m in Sources */,
+				25296A871D34831E000341B8 /* JJFormat.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		25296A771D347AEE000341B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		25296A781D347AEE000341B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25296A7A1D347AEE000341B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		25296A7B1D347AEE000341B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25296A6B1D347AEE000341B8 /* Build configuration list for PBXProject "JJShakeble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25296A771D347AEE000341B8 /* Debug */,
+				25296A781D347AEE000341B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25296A791D347AEE000341B8 /* Build configuration list for PBXNativeTarget "JJShakeble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25296A7A1D347AEE000341B8 /* Debug */,
+				25296A7B1D347AEE000341B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25296A681D347AEE000341B8 /* Project object */;
+}

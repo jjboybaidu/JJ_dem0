@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		653296D31D2FEA3F001A6CDB /* JJBLECentralManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 653296D21D2FEA3F001A6CDB /* JJBLECentralManager.h */; };
+		653296D51D2FEA3F001A6CDB /* JJBLECentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 653296D41D2FEA3F001A6CDB /* JJBLECentralManager.m */; };
+		653296DC1D2FEB62001A6CDB /* JJBLECentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 653296D21D2FEA3F001A6CDB /* JJBLECentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		653296CD1D2FEA3F001A6CDB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				653296D31D2FEA3F001A6CDB /* JJBLECentralManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		653296CF1D2FEA3F001A6CDB /* libJJBLECentralManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJBLECentralManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		653296D21D2FEA3F001A6CDB /* JJBLECentralManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJBLECentralManager.h; sourceTree = "<group>"; };
+		653296D41D2FEA3F001A6CDB /* JJBLECentralManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJBLECentralManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		653296CC1D2FEA3F001A6CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		653296C61D2FEA3F001A6CDB = {
+			isa = PBXGroup;
+			children = (
+				653296D11D2FEA3F001A6CDB /* JJBLECentralManager */,
+				653296D01D2FEA3F001A6CDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		653296D01D2FEA3F001A6CDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				653296CF1D2FEA3F001A6CDB /* libJJBLECentralManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		653296D11D2FEA3F001A6CDB /* JJBLECentralManager */ = {
+			isa = PBXGroup;
+			children = (
+				653296D21D2FEA3F001A6CDB /* JJBLECentralManager.h */,
+				653296D41D2FEA3F001A6CDB /* JJBLECentralManager.m */,
+			);
+			path = JJBLECentralManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		653296DB1D2FEB5A001A6CDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653296DC1D2FEB62001A6CDB /* JJBLECentralManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		653296CE1D2FEA3F001A6CDB /* JJBLECentralManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653296D81D2FEA3F001A6CDB /* Build configuration list for PBXNativeTarget "JJBLECentralManager" */;
+			buildPhases = (
+				653296CB1D2FEA3F001A6CDB /* Sources */,
+				653296CC1D2FEA3F001A6CDB /* Frameworks */,
+				653296CD1D2FEA3F001A6CDB /* CopyFiles */,
+				653296DB1D2FEB5A001A6CDB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJBLECentralManager;
+			productName = JJBLECentralManager;
+			productReference = 653296CF1D2FEA3F001A6CDB /* libJJBLECentralManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		653296C71D2FEA3F001A6CDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jjboybaidu;
+				TargetAttributes = {
+					653296CE1D2FEA3F001A6CDB = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = XD6MAD536B;
+					};
+				};
+			};
+			buildConfigurationList = 653296CA1D2FEA3F001A6CDB /* Build configuration list for PBXProject "JJBLECentralManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 653296C61D2FEA3F001A6CDB;
+			productRefGroup = 653296D01D2FEA3F001A6CDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				653296CE1D2FEA3F001A6CDB /* JJBLECentralManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		653296CB1D2FEA3F001A6CDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653296D51D2FEA3F001A6CDB /* JJBLECentralManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		653296D61D2FEA3F001A6CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		653296D71D2FEA3F001A6CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		653296D91D2FEA3F001A6CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		653296DA1D2FEA3F001A6CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		653296CA1D2FEA3F001A6CDB /* Build configuration list for PBXProject "JJBLECentralManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653296D61D2FEA3F001A6CDB /* Debug */,
+				653296D71D2FEA3F001A6CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653296D81D2FEA3F001A6CDB /* Build configuration list for PBXNativeTarget "JJBLECentralManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653296D91D2FEA3F001A6CDB /* Debug */,
+				653296DA1D2FEA3F001A6CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 653296C71D2FEA3F001A6CDB /* Project object */;
+}

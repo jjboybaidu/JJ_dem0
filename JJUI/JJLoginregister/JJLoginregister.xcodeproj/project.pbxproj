@@ -1,0 +1,273 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		653298461D30DCDD001A6CDB /* JJLoginregister.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 653298451D30DCDD001A6CDB /* JJLoginregister.h */; };
+		653298481D30DCDD001A6CDB /* JJLoginregister.m in Sources */ = {isa = PBXBuildFile; fileRef = 653298471D30DCDD001A6CDB /* JJLoginregister.m */; };
+		653298511D30DDE8001A6CDB /* JJVertialbutton.m in Sources */ = {isa = PBXBuildFile; fileRef = 653298501D30DDE8001A6CDB /* JJVertialbutton.m */; };
+		653298541D30DE44001A6CDB /* JJTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 653298531D30DE44001A6CDB /* JJTextfield.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		653298401D30DCDD001A6CDB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				653298461D30DCDD001A6CDB /* JJLoginregister.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		653298421D30DCDD001A6CDB /* libJJLoginregister.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJLoginregister.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		653298451D30DCDD001A6CDB /* JJLoginregister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJLoginregister.h; sourceTree = "<group>"; };
+		653298471D30DCDD001A6CDB /* JJLoginregister.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJLoginregister.m; sourceTree = "<group>"; };
+		6532984E1D30DD22001A6CDB /* JJLoginregister.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJLoginregister.xib; sourceTree = "<group>"; };
+		6532984F1D30DDE8001A6CDB /* JJVertialbutton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJVertialbutton.h; sourceTree = "<group>"; };
+		653298501D30DDE8001A6CDB /* JJVertialbutton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJVertialbutton.m; sourceTree = "<group>"; };
+		653298521D30DE44001A6CDB /* JJTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTextfield.h; sourceTree = "<group>"; };
+		653298531D30DE44001A6CDB /* JJTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJTextfield.m; sourceTree = "<group>"; };
+		653298A51D30E00A001A6CDB /* JJLoginregister.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JJLoginregister.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6532983F1D30DCDD001A6CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		653298391D30DCDD001A6CDB = {
+			isa = PBXGroup;
+			children = (
+				653298441D30DCDD001A6CDB /* JJLoginregister */,
+				653298431D30DCDD001A6CDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		653298431D30DCDD001A6CDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				653298421D30DCDD001A6CDB /* libJJLoginregister.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		653298441D30DCDD001A6CDB /* JJLoginregister */ = {
+			isa = PBXGroup;
+			children = (
+				653298451D30DCDD001A6CDB /* JJLoginregister.h */,
+				653298471D30DCDD001A6CDB /* JJLoginregister.m */,
+				6532984E1D30DD22001A6CDB /* JJLoginregister.xib */,
+				6532984F1D30DDE8001A6CDB /* JJVertialbutton.h */,
+				653298501D30DDE8001A6CDB /* JJVertialbutton.m */,
+				653298521D30DE44001A6CDB /* JJTextfield.h */,
+				653298531D30DE44001A6CDB /* JJTextfield.m */,
+				653298A51D30E00A001A6CDB /* JJLoginregister.xcassets */,
+			);
+			path = JJLoginregister;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		653298411D30DCDD001A6CDB /* JJLoginregister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6532984B1D30DCDD001A6CDB /* Build configuration list for PBXNativeTarget "JJLoginregister" */;
+			buildPhases = (
+				6532983E1D30DCDD001A6CDB /* Sources */,
+				6532983F1D30DCDD001A6CDB /* Frameworks */,
+				653298401D30DCDD001A6CDB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJLoginregister;
+			productName = JJLoginregister;
+			productReference = 653298421D30DCDD001A6CDB /* libJJLoginregister.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6532983A1D30DCDD001A6CDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jjboybaidu;
+				TargetAttributes = {
+					653298411D30DCDD001A6CDB = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = XD6MAD536B;
+					};
+				};
+			};
+			buildConfigurationList = 6532983D1D30DCDD001A6CDB /* Build configuration list for PBXProject "JJLoginregister" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 653298391D30DCDD001A6CDB;
+			productRefGroup = 653298431D30DCDD001A6CDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				653298411D30DCDD001A6CDB /* JJLoginregister */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6532983E1D30DCDD001A6CDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653298541D30DE44001A6CDB /* JJTextfield.m in Sources */,
+				653298481D30DCDD001A6CDB /* JJLoginregister.m in Sources */,
+				653298511D30DDE8001A6CDB /* JJVertialbutton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		653298491D30DCDD001A6CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6532984A1D30DCDD001A6CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6532984C1D30DCDD001A6CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6532984D1D30DCDD001A6CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6532983D1D30DCDD001A6CDB /* Build configuration list for PBXProject "JJLoginregister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653298491D30DCDD001A6CDB /* Debug */,
+				6532984A1D30DCDD001A6CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6532984B1D30DCDD001A6CDB /* Build configuration list for PBXNativeTarget "JJLoginregister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6532984C1D30DCDD001A6CDB /* Debug */,
+				6532984D1D30DCDD001A6CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6532983A1D30DCDD001A6CDB /* Project object */;
+}
