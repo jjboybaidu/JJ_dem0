@@ -10,6 +10,7 @@
 #import "RunInBackground.h"
 #import "JJNewFeature.h"
 #import "JJTableViewRowAction.h"
+#import "JJCountdown.h"
 
 @interface AppDelegate ()
 
@@ -24,9 +25,21 @@
     // [self setupNewFeature];
     
     // Setup JJTableViewRowAction
-    [self setupJJTableViewRowAction];
+    // [self setupJJTableViewRowAction];
+    
+    // setup JJCountdown
+    // [self setupJJCountdown];
     
     return YES;
+}
+
+// setupJJCountdown
+- (void)setupJJCountdown{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    JJCountdown *countdown = [[JJCountdown alloc]init];
+    countdown.view.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = countdown;
+    [self.window makeKeyAndVisible];
 }
 
 // Setup NewFeature

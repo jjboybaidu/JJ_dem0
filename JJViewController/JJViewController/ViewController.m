@@ -10,6 +10,7 @@
 #import "JJFormat.h"
 #import "JJShakeble.h"
 #import "JJCoreMotion.h"
+#import "JJAlertController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,7 @@
 @implementation ViewController{
     JJShakeble *shakeble;
     JJCoreMotion *coremotion;
+    UIAlertController* alertController;
 }
 
 - (void)viewDidLoad {
@@ -27,10 +29,58 @@
     // [self setupJJFormat];
     
     // setup JJShakeble
-    [self setupJJShaekble];
+    // [self setupJJShaekble];
     
     // setup JJCoreMotin
     // [self setupJJCoreMotion];
+    
+    // setup button
+    // [self setupButton];
+    
+    
+}
+
+// setupButton
+- (void)setupButton{
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(self.view.center.x, self.view.center.y, 50, 30)];
+    button.backgroundColor = [UIColor redColor];
+    [button setTitle:@"请点我" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(goSystemSetting) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:button];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    // setup JJAlertController
+    // [self presentViewController:[self setupJJAlertController] animated:YES completion:^{   }];
+    
+    // goSystemSetting
+    // [self goSystemSetting];
+}
+
+// goSystemSetting
+- (void)goSystemSetting{
+    NSURL *url = [NSURL URLWithString:@"prefs:root=WIFI"];
+    if ([[UIApplication sharedApplication] canOpenURL:url])
+    {
+        [[UIApplication sharedApplication] openURL:url];
+    }
+}
+
+// setupJJAlertController
+- (UIAlertController*)setupJJAlertController{
+    JJAlertController *jjalertcontroller = [[JJAlertController alloc]init];
+    
+    // normalAlertController
+    // alertController = [jjalertcontroller setupAlertController];
+    
+    // destrucitiveAlertController
+    // alertController = [jjalertcontroller setupDestoryAlertController];
+    
+    // actionSheetAlertController
+    alertController = [jjalertcontroller setupActionSheetAlertController];
+    
+    return alertController;
 }
 
 // setupJJFormat

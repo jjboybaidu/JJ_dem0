@@ -8,6 +8,9 @@
       location = "container:"
       name = "JJUI">
       <FileRef
+         location = "group:JJUI/JJAlertController/JJAlertController.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:JJUI/JJTableViewRowAction/JJTableViewRowAction.xcodeproj">
       </FileRef>
       <FileRef
@@ -26,6 +29,9 @@
    <Group
       location = "container:"
       name = "JJLogic">
+      <FileRef
+         location = "group:JJLogic/JJCountdown/JJCountdown.xcodeproj">
+      </FileRef>
       <FileRef
          location = "group:JJLogic/JJCoreMotion/JJCoreMotion.xcodeproj">
       </FileRef>

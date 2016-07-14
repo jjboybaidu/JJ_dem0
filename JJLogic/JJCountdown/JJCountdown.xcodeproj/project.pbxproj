@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25E0698C1D376E4000EA8D65 /* JJCountdown.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25E0698B1D376E4000EA8D65 /* JJCountdown.h */; };
+		25E0698E1D376E4000EA8D65 /* JJCountdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E0698D1D376E4000EA8D65 /* JJCountdown.m */; };
+		25E069951D37704C00EA8D65 /* JJCountdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 25E0698B1D376E4000EA8D65 /* JJCountdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25E069861D376E4000EA8D65 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				25E0698C1D376E4000EA8D65 /* JJCountdown.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		25E069881D376E4000EA8D65 /* libJJCountdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJCountdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E0698B1D376E4000EA8D65 /* JJCountdown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJCountdown.h; sourceTree = "<group>"; };
+		25E0698D1D376E4000EA8D65 /* JJCountdown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJCountdown.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25E069851D376E4000EA8D65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25E0697F1D376E4000EA8D65 = {
+			isa = PBXGroup;
+			children = (
+				25E0698A1D376E4000EA8D65 /* JJCountdown */,
+				25E069891D376E4000EA8D65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25E069891D376E4000EA8D65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25E069881D376E4000EA8D65 /* libJJCountdown.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25E0698A1D376E4000EA8D65 /* JJCountdown */ = {
+			isa = PBXGroup;
+			children = (
+				25E0698B1D376E4000EA8D65 /* JJCountdown.h */,
+				25E0698D1D376E4000EA8D65 /* JJCountdown.m */,
+			);
+			path = JJCountdown;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		25E069941D37704900EA8D65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25E069951D37704C00EA8D65 /* JJCountdown.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		25E069871D376E4000EA8D65 /* JJCountdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25E069911D376E4000EA8D65 /* Build configuration list for PBXNativeTarget "JJCountdown" */;
+			buildPhases = (
+				25E069841D376E4000EA8D65 /* Sources */,
+				25E069851D376E4000EA8D65 /* Frameworks */,
+				25E069861D376E4000EA8D65 /* CopyFiles */,
+				25E069941D37704900EA8D65 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJCountdown;
+			productName = JJCountdown;
+			productReference = 25E069881D376E4000EA8D65 /* libJJCountdown.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25E069801D376E4000EA8D65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = farbell;
+				TargetAttributes = {
+					25E069871D376E4000EA8D65 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 25E069831D376E4000EA8D65 /* Build configuration list for PBXProject "JJCountdown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 25E0697F1D376E4000EA8D65;
+			productRefGroup = 25E069891D376E4000EA8D65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25E069871D376E4000EA8D65 /* JJCountdown */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25E069841D376E4000EA8D65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25E0698E1D376E4000EA8D65 /* JJCountdown.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		25E0698F1D376E4000EA8D65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		25E069901D376E4000EA8D65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25E069921D376E4000EA8D65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		25E069931D376E4000EA8D65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25E069831D376E4000EA8D65 /* Build configuration list for PBXProject "JJCountdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25E0698F1D376E4000EA8D65 /* Debug */,
+				25E069901D376E4000EA8D65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25E069911D376E4000EA8D65 /* Build configuration list for PBXNativeTarget "JJCountdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25E069921D376E4000EA8D65 /* Debug */,
+				25E069931D376E4000EA8D65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25E069801D376E4000EA8D65 /* Project object */;
+}

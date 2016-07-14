@@ -20,6 +20,8 @@
 		25BE8D621D2F79EE001463AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BE8D611D2F79EE001463AC /* Assets.xcassets */; };
 		25BE8D651D2F79EE001463AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BE8D631D2F79EE001463AC /* LaunchScreen.storyboard */; };
 		25BE8D6F1D2F7B0F001463AC /* libJJFormat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BE8D6E1D2F7B0F001463AC /* libJJFormat.a */; };
+		25E069431D3708FC00EA8D65 /* libJJAlertController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E069421D3708FC00EA8D65 /* libJJAlertController.a */; };
+		25E069971D37705800EA8D65 /* libJJCountdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E069961D37705800EA8D65 /* libJJCountdown.a */; };
 		653296DE1D2FEB69001A6CDB /* libJJBLECentralManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 653296DD1D2FEB69001A6CDB /* libJJBLECentralManager.a */; };
 		659504111D33D74500DE81A4 /* libJJShake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 659504101D33D74500DE81A4 /* libJJShake.a */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,8 @@
 		25BE8D641D2F79EE001463AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25BE8D661D2F79EE001463AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25BE8D6E1D2F7B0F001463AC /* libJJFormat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJFormat.a; path = "../JJFormat/build/Debug-iphoneos/libJJFormat.a"; sourceTree = "<group>"; };
+		25E069421D3708FC00EA8D65 /* libJJAlertController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJAlertController.a; path = "../../../../Library/Developer/Xcode/DerivedData/demo-bwcorpcirxnitqgyooutxafvrgro/Build/Products/Debug-iphonesimulator/libJJAlertController.a"; sourceTree = "<group>"; };
+		25E069961D37705800EA8D65 /* libJJCountdown.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJCountdown.a; path = "../../../../Library/Developer/Xcode/DerivedData/demo-bwcorpcirxnitqgyooutxafvrgro/Build/Products/Debug-iphonesimulator/libJJCountdown.a"; sourceTree = "<group>"; };
 		653296DD1D2FEB69001A6CDB /* libJJBLECentralManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJBLECentralManager.a; path = "../JJBLECentralManager/build/Debug-iphoneos/libJJBLECentralManager.a"; sourceTree = "<group>"; };
 		659504101D33D74500DE81A4 /* libJJShake.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJShake.a; path = "../JJUI/JJShake/build/Debug-iphoneos/libJJShake.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25E069971D37705800EA8D65 /* libJJCountdown.a in Frameworks */,
+				25E069431D3708FC00EA8D65 /* libJJAlertController.a in Frameworks */,
 				2556047C1D362617004B433D /* libJJTableViewRowAction.a in Frameworks */,
 				255604621D35E144004B433D /* libJJNewFeature.a in Frameworks */,
 				255604431D34C2DB004B433D /* libJJCoreMotion.a in Frameworks */,
@@ -78,6 +84,8 @@
 		25BE8D491D2F79EE001463AC = {
 			isa = PBXGroup;
 			children = (
+				25E069961D37705800EA8D65 /* libJJCountdown.a */,
+				25E069421D3708FC00EA8D65 /* libJJAlertController.a */,
 				2556047B1D362617004B433D /* libJJTableViewRowAction.a */,
 				255604611D35E144004B433D /* libJJNewFeature.a */,
 				255604421D34C2DB004B433D /* libJJCoreMotion.a */,
