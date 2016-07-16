@@ -312,14 +312,22 @@ static NSMutableDictionary *_bitQDic;
 
 // Format NSData time to current time
 + (void)formatToCurrentTimeWithNSDataTime:(NSData*)data{
-    if (data.length == 8) {
+    NSData *subData = [NSData data];
+    
+    if (data.length == 10) {
+        subData = [data subdataWithRange:NSMakeRange(2, 8)];
+    }else{
+        subData = data;
+    }
+    
+    if (subData.length == 8) {
         unsigned short yearData ;
-        [data getBytes:&yearData range:NSMakeRange(0, 2)];
-        NSData *monthData = [data subdataWithRange:NSMakeRange(2, 1)];
-        NSData *dayData = [data subdataWithRange:NSMakeRange(3, 1)];
-        NSData *hourData = [data subdataWithRange:NSMakeRange(4, 1)];
-        NSData *minData = [data subdataWithRange:NSMakeRange(5, 1)];
-        NSData *secondData = [data subdataWithRange:NSMakeRange(6, 1)];
+        [subData getBytes:&yearData range:NSMakeRange(0, 2)];
+        NSData *monthData = [subData subdataWithRange:NSMakeRange(2, 1)];
+        NSData *dayData = [subData subdataWithRange:NSMakeRange(3, 1)];
+        NSData *hourData = [subData subdataWithRange:NSMakeRange(4, 1)];
+        NSData *minData = [subData subdataWithRange:NSMakeRange(5, 1)];
+        NSData *secondData = [subData subdataWithRange:NSMakeRange(6, 1)];
         NSLog(@"Current Time is ：%d年%d月%d日%d时%d分%d秒",
               yearData,
               [self transfer:monthData],
