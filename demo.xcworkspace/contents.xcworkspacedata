@@ -30,6 +30,9 @@
       location = "container:"
       name = "JJLogic">
       <FileRef
+         location = "group:JJLogic/JJSqlite3/JJSqlite3.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:JJLogic/JJRunLoopObserver/JJRunLoopObserver.xcodeproj">
       </FileRef>
       <FileRef

@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		656849F81D3E5AD300317800 /* JJSqlite3.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 656849F71D3E5AD300317800 /* JJSqlite3.h */; };
+		656849FA1D3E5AD300317800 /* JJSqlite3.m in Sources */ = {isa = PBXBuildFile; fileRef = 656849F91D3E5AD300317800 /* JJSqlite3.m */; };
+		65684A011D3E603600317800 /* libJJFormat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65684A001D3E603600317800 /* libJJFormat.a */; };
+		65684A041D3E60D000317800 /* JJFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 65684A031D3E60D000317800 /* JJFormat.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		656849F21D3E5AD300317800 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				656849F81D3E5AD300317800 /* JJSqlite3.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		656849F41D3E5AD300317800 /* libJJSqlite3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJSqlite3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		656849F71D3E5AD300317800 /* JJSqlite3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJSqlite3.h; sourceTree = "<group>"; };
+		656849F91D3E5AD300317800 /* JJSqlite3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJSqlite3.m; sourceTree = "<group>"; };
+		65684A001D3E603600317800 /* libJJFormat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJFormat.a; path = "../../../../Library/Developer/Xcode/DerivedData/demo-gspsconkfurvmwdqgdsngwepxoqh/Build/Products/Debug-iphonesimulator/libJJFormat.a"; sourceTree = "<group>"; };
+		65684A021D3E60D000317800 /* JJFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJFormat.h; sourceTree = "<group>"; };
+		65684A031D3E60D000317800 /* JJFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJFormat.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		656849F11D3E5AD300317800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65684A011D3E603600317800 /* libJJFormat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		656849EB1D3E5AD300317800 = {
+			isa = PBXGroup;
+			children = (
+				65684A001D3E603600317800 /* libJJFormat.a */,
+				656849F61D3E5AD300317800 /* JJSqlite3 */,
+				656849F51D3E5AD300317800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		656849F51D3E5AD300317800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				656849F41D3E5AD300317800 /* libJJSqlite3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		656849F61D3E5AD300317800 /* JJSqlite3 */ = {
+			isa = PBXGroup;
+			children = (
+				65684A021D3E60D000317800 /* JJFormat.h */,
+				65684A031D3E60D000317800 /* JJFormat.m */,
+				656849F71D3E5AD300317800 /* JJSqlite3.h */,
+				656849F91D3E5AD300317800 /* JJSqlite3.m */,
+			);
+			path = JJSqlite3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		656849F31D3E5AD300317800 /* JJSqlite3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656849FD1D3E5AD300317800 /* Build configuration list for PBXNativeTarget "JJSqlite3" */;
+			buildPhases = (
+				656849F01D3E5AD300317800 /* Sources */,
+				656849F11D3E5AD300317800 /* Frameworks */,
+				656849F21D3E5AD300317800 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJSqlite3;
+			productName = JJSqlite3;
+			productReference = 656849F41D3E5AD300317800 /* libJJSqlite3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		656849EC1D3E5AD300317800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jjboybaidu;
+				TargetAttributes = {
+					656849F31D3E5AD300317800 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = XD6MAD536B;
+					};
+				};
+			};
+			buildConfigurationList = 656849EF1D3E5AD300317800 /* Build configuration list for PBXProject "JJSqlite3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 656849EB1D3E5AD300317800;
+			productRefGroup = 656849F51D3E5AD300317800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				656849F31D3E5AD300317800 /* JJSqlite3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		656849F01D3E5AD300317800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65684A041D3E60D000317800 /* JJFormat.m in Sources */,
+				656849FA1D3E5AD300317800 /* JJSqlite3.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		656849FB1D3E5AD300317800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		656849FC1D3E5AD300317800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		656849FE1D3E5AD300317800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		656849FF1D3E5AD300317800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		656849EF1D3E5AD300317800 /* Build configuration list for PBXProject "JJSqlite3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656849FB1D3E5AD300317800 /* Debug */,
+				656849FC1D3E5AD300317800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656849FD1D3E5AD300317800 /* Build configuration list for PBXNativeTarget "JJSqlite3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656849FE1D3E5AD300317800 /* Debug */,
+				656849FF1D3E5AD300317800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 656849EC1D3E5AD300317800 /* Project object */;
+}
