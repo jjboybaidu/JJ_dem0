@@ -28,7 +28,7 @@
     // [self setupJJTableViewRowAction];
     
     // setup JJCountdown
-    [self setupJJCountdown];
+    // [self setupJJCountdown];
     
     return YES;
 }

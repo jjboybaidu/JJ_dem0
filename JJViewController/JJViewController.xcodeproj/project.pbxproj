@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2519A6091D3DAA2E00625502 /* libJJRunLoopObserver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2519A6081D3DAA2E00625502 /* libJJRunLoopObserver.a */; };
 		25296A801D3480B4000341B8 /* libJJShakeble.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25296A7F1D3480B4000341B8 /* libJJShakeble.a */; };
 		255604261D34988A004B433D /* mysong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 255604231D34988A004B433D /* mysong.mp3 */; };
 		255604271D34988A004B433D /* RunInBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 255604251D34988A004B433D /* RunInBackground.m */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2519A6081D3DAA2E00625502 /* libJJRunLoopObserver.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJRunLoopObserver.a; path = "../JJLogic/JJRunLoopObserver/build/Debug-iphoneos/libJJRunLoopObserver.a"; sourceTree = "<group>"; };
 		25296A7F1D3480B4000341B8 /* libJJShakeble.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJShakeble.a; path = "../JJLogic/JJShakeble/build/Debug-iphoneos/libJJShakeble.a"; sourceTree = "<group>"; };
 		255604231D34988A004B433D /* mysong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mysong.mp3; sourceTree = "<group>"; };
 		255604241D34988A004B433D /* RunInBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunInBackground.h; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2519A6091D3DAA2E00625502 /* libJJRunLoopObserver.a in Frameworks */,
 				25E069971D37705800EA8D65 /* libJJCountdown.a in Frameworks */,
 				25E069431D3708FC00EA8D65 /* libJJAlertController.a in Frameworks */,
 				2556047C1D362617004B433D /* libJJTableViewRowAction.a in Frameworks */,
@@ -84,6 +87,7 @@
 		25BE8D491D2F79EE001463AC = {
 			isa = PBXGroup;
 			children = (
+				2519A6081D3DAA2E00625502 /* libJJRunLoopObserver.a */,
 				25E069961D37705800EA8D65 /* libJJCountdown.a */,
 				25E069421D3708FC00EA8D65 /* libJJAlertController.a */,
 				2556047B1D362617004B433D /* libJJTableViewRowAction.a */,

@@ -4,7 +4,7 @@
 //
 //  Created by farbell-imac on 16/7/12.
 //  Copyright © 2016年 farbell. All rights reserved.
-//
+//  亮屏摇一摇
 
 #import "JJShakeble.h"
 #import "JJCentralble.h"

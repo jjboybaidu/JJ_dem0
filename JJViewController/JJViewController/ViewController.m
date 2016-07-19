@@ -11,6 +11,7 @@
 #import "JJShakeble.h"
 #import "JJCoreMotion.h"
 #import "JJAlertController.h"
+#import "JJRunLoopObserver.h"
 
 @interface ViewController ()
 
@@ -37,7 +38,13 @@
     // setup button
     // [self setupButton];
     
-    
+    // setup JJRunLoopObserver
+    [self setupJJRunLoopObserver];
+}
+
+- (void)setupJJRunLoopObserver{
+    JJRunLoopObserver *runloopobserver = [[JJRunLoopObserver alloc]init];
+    [runloopobserver setupJJRunLoopObserver];
 }
 
 // setupButton
