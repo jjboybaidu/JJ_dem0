@@ -24,6 +24,7 @@
 		25E069431D3708FC00EA8D65 /* libJJAlertController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E069421D3708FC00EA8D65 /* libJJAlertController.a */; };
 		25E069971D37705800EA8D65 /* libJJCountdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E069961D37705800EA8D65 /* libJJCountdown.a */; };
 		653296DE1D2FEB69001A6CDB /* libJJBLECentralManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 653296DD1D2FEB69001A6CDB /* libJJBLECentralManager.a */; };
+		65684A1D1D3FAAD900317800 /* libJJUILocalNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65684A1C1D3FAAD900317800 /* libJJUILocalNotification.a */; };
 		659504111D33D74500DE81A4 /* libJJShake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 659504101D33D74500DE81A4 /* libJJShake.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		25E069421D3708FC00EA8D65 /* libJJAlertController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJAlertController.a; path = "../../../../Library/Developer/Xcode/DerivedData/demo-bwcorpcirxnitqgyooutxafvrgro/Build/Products/Debug-iphonesimulator/libJJAlertController.a"; sourceTree = "<group>"; };
 		25E069961D37705800EA8D65 /* libJJCountdown.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJCountdown.a; path = "../../../../Library/Developer/Xcode/DerivedData/demo-bwcorpcirxnitqgyooutxafvrgro/Build/Products/Debug-iphonesimulator/libJJCountdown.a"; sourceTree = "<group>"; };
 		653296DD1D2FEB69001A6CDB /* libJJBLECentralManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJBLECentralManager.a; path = "../JJBLECentralManager/build/Debug-iphoneos/libJJBLECentralManager.a"; sourceTree = "<group>"; };
+		65684A1C1D3FAAD900317800 /* libJJUILocalNotification.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJUILocalNotification.a; path = "../JJUI/JJUILocalNotification/build/Debug-iphoneos/libJJUILocalNotification.a"; sourceTree = "<group>"; };
 		659504101D33D74500DE81A4 /* libJJShake.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJShake.a; path = "../JJUI/JJShake/build/Debug-iphoneos/libJJShake.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65684A1D1D3FAAD900317800 /* libJJUILocalNotification.a in Frameworks */,
 				2519A6091D3DAA2E00625502 /* libJJRunLoopObserver.a in Frameworks */,
 				25E069971D37705800EA8D65 /* libJJCountdown.a in Frameworks */,
 				25E069431D3708FC00EA8D65 /* libJJAlertController.a in Frameworks */,
@@ -87,6 +90,7 @@
 		25BE8D491D2F79EE001463AC = {
 			isa = PBXGroup;
 			children = (
+				65684A1C1D3FAAD900317800 /* libJJUILocalNotification.a */,
 				2519A6081D3DAA2E00625502 /* libJJRunLoopObserver.a */,
 				25E069961D37705800EA8D65 /* libJJCountdown.a */,
 				25E069421D3708FC00EA8D65 /* libJJAlertController.a */,
@@ -328,6 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JJViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjboybaidu.JJViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -341,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JJViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjboybaidu.JJViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";

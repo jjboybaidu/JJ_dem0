@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65684A121D3FAAAE00317800 /* JJUILocalNotification.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65684A111D3FAAAE00317800 /* JJUILocalNotification.h */; };
+		65684A141D3FAAAE00317800 /* JJUILocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 65684A131D3FAAAE00317800 /* JJUILocalNotification.m */; };
+		65684A1B1D3FAAC400317800 /* JJUILocalNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 65684A111D3FAAAE00317800 /* JJUILocalNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65684A0C1D3FAAAE00317800 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				65684A121D3FAAAE00317800 /* JJUILocalNotification.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		65684A0E1D3FAAAE00317800 /* libJJUILocalNotification.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJUILocalNotification.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		65684A111D3FAAAE00317800 /* JJUILocalNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJUILocalNotification.h; sourceTree = "<group>"; };
+		65684A131D3FAAAE00317800 /* JJUILocalNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJUILocalNotification.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65684A0B1D3FAAAE00317800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65684A051D3FAAAE00317800 = {
+			isa = PBXGroup;
+			children = (
+				65684A101D3FAAAE00317800 /* JJUILocalNotification */,
+				65684A0F1D3FAAAE00317800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65684A0F1D3FAAAE00317800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65684A0E1D3FAAAE00317800 /* libJJUILocalNotification.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65684A101D3FAAAE00317800 /* JJUILocalNotification */ = {
+			isa = PBXGroup;
+			children = (
+				65684A111D3FAAAE00317800 /* JJUILocalNotification.h */,
+				65684A131D3FAAAE00317800 /* JJUILocalNotification.m */,
+			);
+			path = JJUILocalNotification;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65684A1A1D3FAABE00317800 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65684A1B1D3FAAC400317800 /* JJUILocalNotification.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		65684A0D1D3FAAAE00317800 /* JJUILocalNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65684A171D3FAAAE00317800 /* Build configuration list for PBXNativeTarget "JJUILocalNotification" */;
+			buildPhases = (
+				65684A0A1D3FAAAE00317800 /* Sources */,
+				65684A0B1D3FAAAE00317800 /* Frameworks */,
+				65684A0C1D3FAAAE00317800 /* CopyFiles */,
+				65684A1A1D3FAABE00317800 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJUILocalNotification;
+			productName = JJUILocalNotification;
+			productReference = 65684A0E1D3FAAAE00317800 /* libJJUILocalNotification.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65684A061D3FAAAE00317800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jjboybaidu;
+				TargetAttributes = {
+					65684A0D1D3FAAAE00317800 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = XD6MAD536B;
+					};
+				};
+			};
+			buildConfigurationList = 65684A091D3FAAAE00317800 /* Build configuration list for PBXProject "JJUILocalNotification" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65684A051D3FAAAE00317800;
+			productRefGroup = 65684A0F1D3FAAAE00317800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65684A0D1D3FAAAE00317800 /* JJUILocalNotification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65684A0A1D3FAAAE00317800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65684A141D3FAAAE00317800 /* JJUILocalNotification.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		65684A151D3FAAAE00317800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65684A161D3FAAAE00317800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65684A181D3FAAAE00317800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		65684A191D3FAAAE00317800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65684A091D3FAAAE00317800 /* Build configuration list for PBXProject "JJUILocalNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65684A151D3FAAAE00317800 /* Debug */,
+				65684A161D3FAAAE00317800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65684A171D3FAAAE00317800 /* Build configuration list for PBXNativeTarget "JJUILocalNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65684A181D3FAAAE00317800 /* Debug */,
+				65684A191D3FAAAE00317800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65684A061D3FAAAE00317800 /* Project object */;
+}

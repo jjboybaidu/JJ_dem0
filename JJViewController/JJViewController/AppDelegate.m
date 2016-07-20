@@ -11,6 +11,8 @@
 #import "JJNewFeature.h"
 #import "JJTableViewRowAction.h"
 #import "JJCountdown.h"
+#import "JJAlertController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -55,9 +57,34 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     JJTableViewRowAction *tableviewrowaction = [[JJTableViewRowAction alloc]init];
     UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:tableviewrowaction];
-    nav.navigationBar.backgroundColor=[UIColor blackColor];
+    nav.navigationBar.backgroundColor = [UIColor blackColor];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+     UIAlertView *alertview = [[UIAlertView alloc]initWithTitle:notification.alertBody message:notification.alertBody delegate:self cancelButtonTitle:@"submit" otherButtonTitles:nil];
+     [alertview show];
+    
+    [self performSelector:@selector(setupDismissView:) withObject:alertview afterDelay:0.001];
+}
+
+// setup dismissView
+- (void)setupDismissView:(UIAlertView*)alertview{
+    [alertview dismissWithClickedButtonIndex:0 animated:NO];
+    alertview = NULL;
+}
+
+// setup JJAlertController
+- (void)setupJJAlertController{
+    JJAlertController *alertController = [[JJAlertController alloc]init];
+    ViewController *viewcontroller = [[ViewController alloc]init];
+    [viewcontroller presentViewController:[alertController setupAlertController] animated:YES completion:^{     }];
+}
+
+// setup ViewController
+- (void)setupViewController{
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

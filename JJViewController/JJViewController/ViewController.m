@@ -12,6 +12,7 @@
 #import "JJCoreMotion.h"
 #import "JJAlertController.h"
 #import "JJRunLoopObserver.h"
+#import "JJUILocalNotification.h"
 
 @interface ViewController ()
 
@@ -39,7 +40,9 @@
     // [self setupButton];
     
     // setup JJRunLoopObserver
-    [self setupJJRunLoopObserver];
+    // [self setupJJRunLoopObserver];
+    
+    
 }
 
 - (void)setupJJRunLoopObserver{
@@ -63,6 +66,15 @@
     
     // goSystemSetting
     // [self goSystemSetting];
+    
+    // setup JJUILocalNotification
+    [self setupJJUILocalNotification];
+}
+
+// setup JJUILocalNotification
+- (void)setupJJUILocalNotification{
+    JJUILocalNotification *localNotification = [[JJUILocalNotification alloc]init];
+    [localNotification setupLocalNotification];
 }
 
 // goSystemSetting
