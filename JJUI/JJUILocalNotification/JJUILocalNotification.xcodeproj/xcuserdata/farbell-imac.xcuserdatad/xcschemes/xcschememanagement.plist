@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>JJRunLoopObserver.xcscheme</key>
+		<key>JJUILocalNotification.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>18</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2519A5FB1D3DA84E00625502</key>
+		<key>65684A0D1D3FAAAE00317800</key>
 		<dict>
 			<key>primary</key>
 			<true/>
