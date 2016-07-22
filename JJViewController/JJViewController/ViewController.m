@@ -76,7 +76,7 @@
     // [self goSystemSetting];
     
     // setup JJUILocalNotification
-    [self setupJJUILocalNotification];
+    // [self setupJJUILocalNotification];
 }
 
 // setup JJUILocalNotification
