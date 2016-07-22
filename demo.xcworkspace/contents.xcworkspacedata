@@ -33,6 +33,9 @@
       location = "container:"
       name = "JJLogic">
       <FileRef
+         location = "group:JJLogic/JJGCDTimer/JJGCDTimer.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:JJLogic/JJSqlite3/JJSqlite3.xcodeproj">
       </FileRef>
       <FileRef

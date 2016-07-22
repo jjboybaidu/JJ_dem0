@@ -10,18 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface JJCentralble : NSObject
-+ (instancetype)getInstance;
-
-- (void)initWithCentral;
-
-/**
- *启动蓝牙服务
- */
-- (void)startService;
-
-/**
- *停止蓝牙服务
- */
-- (void)stopService;
+- (void)setupCentral;
+- (void)removeCentral;
 
 @end
