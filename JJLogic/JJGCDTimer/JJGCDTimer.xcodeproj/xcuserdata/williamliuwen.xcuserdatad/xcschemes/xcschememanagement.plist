@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>JJViewController.xcscheme</key>
+		<key>JJGCDTimer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>19</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>25BE8D511D2F79EE001463AC</key>
+		<key>25EBE70E1D419A2E00725321</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,6 +7,9 @@
 //
 
 #import "JJRunLoopObserver.h"
+@interface JJRunLoopObserver()
+@property(nonatomic,strong)NSTimer *timer;
+@end
 
 @implementation JJRunLoopObserver{
     int count;
@@ -15,7 +18,58 @@
 
 - (void)setupJJRunLoopObserver {
     
-    [self setupSonJJRunLoopObserver];
+    // [self setupSonJJRunLoopObserver];
+    
+    [self setupJJTimerRunLoopWithStatTime:0.01 interval:1];
+}
+
+
+// setupJJTimerRunLoop 后台常驻Timer
+- (void)setupJJTimerRunLoop{
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        NSTimer* timer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:0.01]
+                                                    interval:0.1
+                                                      target:self
+                                                    selector:@selector(runTimer)
+                                                    userInfo:nil
+                                                     repeats:YES];
+        
+        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+        [[NSRunLoop currentRunLoop] run];
+        
+    });
+    
+}
+- (void)runTimer{
+    NSLog(@"runTimer__on thread %@",[NSThread currentThread]);
+}
+
+
+// setupJJTimerRunLoop 只执行4次，1秒执行一次
+- (void)setupJJTimerRunLoopWithStatTime:(float)startTime interval:(float)interval{
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        self.timer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:startTime]
+                                                  interval:interval
+                                                    target:self
+                                                  selector:@selector(runTimerWithRepeatCount)
+                                                  userInfo:nil
+                                                   repeats:YES];
+        
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+        [[NSRunLoop currentRunLoop] run];
+        
+    });
+    
+}
+- (void)runTimerWithRepeatCount{
+    count ++;
+    if (count == 4) {
+        [self.timer invalidate];
+    }
+    NSLog(@"runTimer__on thread %@",[NSThread currentThread]);
 }
 
 
@@ -71,6 +125,13 @@ void myRunLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity 
 }
 
 
+//-----------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------
+
 /*
  *  @brief CFRunLoopObserverContext 用来配置CFRunLoopObserver对象行为的结构体
  typedef struct {
@@ -92,6 +153,8 @@ void myRunLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity 
 
 
 - (void)reference{
+    
+    // 例1
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         // NSLog(@"%@",[NSThread currentThread]);
         /* 获取当前线程的RunLoop:有的话就直接获取，没有的话就自动创建 每个线程都有一个RunLoop */
@@ -126,6 +189,33 @@ void myRunLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity 
         /* 启动RunLoop方法3 ---超时+模式 */
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
     });
+    
+    
+    
+    
+    
+    
+   // 例2
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        NSDate* date = [NSDate dateWithTimeIntervalSinceNow:0.01];
+        NSTimer* myTimer = [[NSTimer alloc] initWithFireDate:date
+                                                    interval:0.1
+                                                      target:self
+                                                    selector:@selector(enumTaskTable)
+                                                    userInfo:nil
+                                                     repeats:YES];
+        //必须获取当前currentRunLoop,是在当前线程
+        NSRunLoop* myRunLoop = [NSRunLoop currentRunLoop];
+        //如果不addTimer，那当前的myTimer会加入到mainLoop
+        [myRunLoop addTimer:myTimer forMode:NSDefaultRunLoopMode];
+        //必须run
+        [myRunLoop run];
+        
+    });
+    
+    
+    
 
 }
 

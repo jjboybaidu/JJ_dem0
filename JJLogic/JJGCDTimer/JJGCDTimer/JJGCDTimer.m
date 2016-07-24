@@ -26,7 +26,7 @@
 }
 
 
-// 主线程：延迟?秒后执行 执行1次
+// 主线程：延迟?秒后执行1次
 - (void)setupMainThreadDelayInSecond:(float)second{
     double delayInSeconds = second;
     dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
@@ -37,7 +37,7 @@
 }
 
 
-// 子线程：延迟？秒后执行 执行1次
+// 子线程：延迟？秒后执行1次
 - (void)setupSonThreadDelayInSecond:(float)second{
     double delayInSeconds = second;
     dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
@@ -48,7 +48,7 @@
 }
 
 
-// 主线程：?秒后执行    隔？秒执行1次     执行？次
+// 主线程：?秒后隔？秒执行1次共执行？次
 - (void)setupMainThreadJJGCDTimerWithStartTimeSinceNow:(float)satrttime interval:(float)intervaltime repeatcount:(int)repeatcount{
 
     dispatch_queue_t queue = dispatch_get_main_queue();
@@ -73,7 +73,7 @@
 }
 
 
-// 子线程：？秒后执行    隔？秒执行1次      执行？次
+// 子线程：?秒后隔？秒执行1次共执行？次
 - (void)setupSonThreadJJGCDTimerWithStartTimeSinceNow:(float)satrttime interval:(float)intervaltime repeatcount:(int)repeatcount{
     
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
