@@ -20,7 +20,67 @@
     
     // [self setupSonJJRunLoopObserver];
     
-    [self setupJJTimerRunLoopWithStatTime:0.01 interval:1];
+    // [self setupJJTimerRunLoopWithStatTime:0.01 interval:1];
+    
+    [self setupNSOperationDependance];
+}
+
+// 借贵宝地一用
+// NSOperation 依赖上一个任务
+- (void)setupNSOperationDependance{
+
+    NSBlockOperation *operation1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务一：下载图片 - %@", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1.0];
+    }];
+    
+    NSBlockOperation *operation2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务二：打水印   - %@", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1.0];
+    }];
+    
+    NSBlockOperation *operation3 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务三：上传图片 - %@", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1.0];
+    }];
+    
+    [operation2 addDependency:operation1];
+    [operation3 addDependency:operation2];
+
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    [queue addOperations:@[operation3, operation2, operation1] waitUntilFinished:NO];
+}
+
+// NSOperation 依赖同一个任务
+- (void)setupNSOperationDependanceSame{
+    
+    NSBlockOperation *operation1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务一：下载图片 - %@", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1.0];
+    }];
+    
+    NSBlockOperation *operation2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务二：打水印   - %@", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1.0];
+    }];
+    
+    NSBlockOperation *operation3 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务三：上传图片 - %@", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1.0];
+    }];
+    
+    NSBlockOperation *operation4 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务四：我在谁后面呢？？ - %@", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1.0];
+    }];
+    
+    [operation2 addDependency:operation1];
+    [operation3 addDependency:operation2];
+    
+    [operation4 addDependency:operation2];
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    [queue addOperations:@[operation3, operation2, operation1,operation4] waitUntilFinished:NO];
 }
 
 
