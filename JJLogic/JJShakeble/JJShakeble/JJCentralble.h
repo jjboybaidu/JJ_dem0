@@ -10,7 +10,8 @@
 #import <UIKit/UIKit.h>
 
 @interface JJCentralble : NSObject
++ (instancetype)sharedInstance;
 - (void)setupCentral;
-- (void)removeCentral;
+- (void)removePeripheral;
 
 @end

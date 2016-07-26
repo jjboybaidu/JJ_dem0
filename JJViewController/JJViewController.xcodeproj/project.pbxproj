@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		2519A6091D3DAA2E00625502 /* libJJRunLoopObserver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2519A6081D3DAA2E00625502 /* libJJRunLoopObserver.a */; };
 		25296A801D3480B4000341B8 /* libJJShakeble.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25296A7F1D3480B4000341B8 /* libJJShakeble.a */; };
-		255604261D34988A004B433D /* mysong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 255604231D34988A004B433D /* mysong.mp3 */; };
-		255604271D34988A004B433D /* RunInBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 255604251D34988A004B433D /* RunInBackground.m */; };
 		255604431D34C2DB004B433D /* libJJCoreMotion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 255604421D34C2DB004B433D /* libJJCoreMotion.a */; };
 		255604621D35E144004B433D /* libJJNewFeature.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 255604611D35E144004B433D /* libJJNewFeature.a */; };
 		2556047C1D362617004B433D /* libJJTableViewRowAction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2556047B1D362617004B433D /* libJJTableViewRowAction.a */; };
+		25B6BBB21D458CDC005B9C38 /* libJJNSOperation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B6BBB11D458CDC005B9C38 /* libJJNSOperation.a */; };
+		25B6BBEB1D45AD9F005B9C38 /* JJRuninbackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B6BBE81D45AD9F005B9C38 /* JJRuninbackground.m */; };
+		25B6BBEC1D45AD9F005B9C38 /* mute.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25B6BBE91D45AD9F005B9C38 /* mute.mp3 */; };
+		25B6BBED1D45AD9F005B9C38 /* mysong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25B6BBEA1D45AD9F005B9C38 /* mysong.mp3 */; };
 		25BE8D571D2F79EE001463AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BE8D561D2F79EE001463AC /* main.m */; };
 		25BE8D5A1D2F79EE001463AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BE8D591D2F79EE001463AC /* AppDelegate.m */; };
 		25BE8D5D1D2F79EE001463AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BE8D5C1D2F79EE001463AC /* ViewController.m */; };
@@ -32,12 +34,15 @@
 /* Begin PBXFileReference section */
 		2519A6081D3DAA2E00625502 /* libJJRunLoopObserver.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJRunLoopObserver.a; path = "../JJLogic/JJRunLoopObserver/build/Debug-iphoneos/libJJRunLoopObserver.a"; sourceTree = "<group>"; };
 		25296A7F1D3480B4000341B8 /* libJJShakeble.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJShakeble.a; path = "../JJLogic/JJShakeble/build/Debug-iphoneos/libJJShakeble.a"; sourceTree = "<group>"; };
-		255604231D34988A004B433D /* mysong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mysong.mp3; sourceTree = "<group>"; };
-		255604241D34988A004B433D /* RunInBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunInBackground.h; sourceTree = "<group>"; };
-		255604251D34988A004B433D /* RunInBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunInBackground.m; sourceTree = "<group>"; };
 		255604421D34C2DB004B433D /* libJJCoreMotion.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJCoreMotion.a; path = "../JJLogic/JJCoreMotion/build/Debug-iphoneos/libJJCoreMotion.a"; sourceTree = "<group>"; };
 		255604611D35E144004B433D /* libJJNewFeature.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJNewFeature.a; path = "../JJUI/JJNewFeature/build/Debug-iphoneos/libJJNewFeature.a"; sourceTree = "<group>"; };
 		2556047B1D362617004B433D /* libJJTableViewRowAction.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJTableViewRowAction.a; path = "../JJUI/JJTableViewRowAction/build/Debug-iphoneos/libJJTableViewRowAction.a"; sourceTree = "<group>"; };
+		25B6BBB11D458CDC005B9C38 /* libJJNSOperation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJNSOperation.a; path = "../JJLogic/JJNSOperation/build/Debug-iphoneos/libJJNSOperation.a"; sourceTree = "<group>"; };
+		25B6BBE41D45AD2F005B9C38 /* libJJRuninbackground.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJRuninbackground.a; path = "../../../../Library/Developer/Xcode/DerivedData/demo-bwcorpcirxnitqgyooutxafvrgro/Build/Products/Debug-iphonesimulator/libJJRuninbackground.a"; sourceTree = "<group>"; };
+		25B6BBE71D45AD9F005B9C38 /* JJRuninbackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJRuninbackground.h; sourceTree = "<group>"; };
+		25B6BBE81D45AD9F005B9C38 /* JJRuninbackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJRuninbackground.m; sourceTree = "<group>"; };
+		25B6BBE91D45AD9F005B9C38 /* mute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mute.mp3; sourceTree = "<group>"; };
+		25B6BBEA1D45AD9F005B9C38 /* mysong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mysong.mp3; sourceTree = "<group>"; };
 		25BE8D521D2F79EE001463AC /* JJViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BE8D561D2F79EE001463AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25BE8D581D2F79EE001463AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B6BBB21D458CDC005B9C38 /* libJJNSOperation.a in Frameworks */,
 				25EBE71F1D419B6800725321 /* libJJGCDTimer.a in Frameworks */,
 				65684A1D1D3FAAD900317800 /* libJJUILocalNotification.a in Frameworks */,
 				2519A6091D3DAA2E00625502 /* libJJRunLoopObserver.a in Frameworks */,
@@ -80,19 +86,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		255604221D34988A004B433D /* RunInBackground */ = {
+		25B6BBE61D45AD9F005B9C38 /* JJRuninbackground */ = {
 			isa = PBXGroup;
 			children = (
-				255604231D34988A004B433D /* mysong.mp3 */,
-				255604241D34988A004B433D /* RunInBackground.h */,
-				255604251D34988A004B433D /* RunInBackground.m */,
+				25B6BBE71D45AD9F005B9C38 /* JJRuninbackground.h */,
+				25B6BBE81D45AD9F005B9C38 /* JJRuninbackground.m */,
+				25B6BBE91D45AD9F005B9C38 /* mute.mp3 */,
+				25B6BBEA1D45AD9F005B9C38 /* mysong.mp3 */,
 			);
-			path = RunInBackground;
+			path = JJRuninbackground;
 			sourceTree = "<group>";
 		};
 		25BE8D491D2F79EE001463AC = {
 			isa = PBXGroup;
 			children = (
+				25B6BBE41D45AD2F005B9C38 /* libJJRuninbackground.a */,
+				25B6BBB11D458CDC005B9C38 /* libJJNSOperation.a */,
 				25EBE71E1D419B6800725321 /* libJJGCDTimer.a */,
 				65684A1C1D3FAAD900317800 /* libJJUILocalNotification.a */,
 				2519A6081D3DAA2E00625502 /* libJJRunLoopObserver.a */,
@@ -129,7 +138,7 @@
 				25BE8D611D2F79EE001463AC /* Assets.xcassets */,
 				25BE8D631D2F79EE001463AC /* LaunchScreen.storyboard */,
 				25BE8D661D2F79EE001463AC /* Info.plist */,
-				255604221D34988A004B433D /* RunInBackground */,
+				25B6BBE61D45AD9F005B9C38 /* JJRuninbackground */,
 				25BE8D551D2F79EE001463AC /* Supporting Files */,
 			);
 			path = JJViewController;
@@ -206,8 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				25BE8D651D2F79EE001463AC /* LaunchScreen.storyboard in Resources */,
-				255604261D34988A004B433D /* mysong.mp3 in Resources */,
+				25B6BBEC1D45AD9F005B9C38 /* mute.mp3 in Resources */,
 				25BE8D621D2F79EE001463AC /* Assets.xcassets in Resources */,
+				25B6BBED1D45AD9F005B9C38 /* mysong.mp3 in Resources */,
 				25BE8D601D2F79EE001463AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				255604271D34988A004B433D /* RunInBackground.m in Sources */,
 				25BE8D5D1D2F79EE001463AC /* ViewController.m in Sources */,
 				25BE8D5A1D2F79EE001463AC /* AppDelegate.m in Sources */,
+				25B6BBEB1D45AD9F005B9C38 /* JJRuninbackground.m in Sources */,
 				25BE8D571D2F79EE001463AC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

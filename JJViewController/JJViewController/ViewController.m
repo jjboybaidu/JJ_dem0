@@ -14,6 +14,7 @@
 #import "JJRunLoopObserver.h"
 #import "JJUILocalNotification.h"
 #import "JJGCDTimer.h"
+#import "JJNSOperation.h"
 
 @interface ViewController ()
 
@@ -32,7 +33,7 @@
     // [self setupJJFormat];
     
     // setup JJShakeble
-    // [self setupJJShaekble];
+    [self setupJJShaekble];
     
     // setup JJCoreMotin
     // [self setupJJCoreMotion];
@@ -41,11 +42,21 @@
     // [self setupButton];
     
     // setup JJRunLoopObserver
-    [self setupJJRunLoopObserver];
+    // [self setupJJRunLoopObserver];
     
     // setup JJGCDTimer
     // [self setupJJGCDTimer];
+    
+    // setup JJNSOperation
+    // [self setupJJNSOperation];
 }
+
+// setup JJNSOperation
+- (void)setupJJNSOperation{
+    JJNSOperation *operation = [[JJNSOperation alloc]init];
+    [operation start];
+}
+
 
 // setup JJGCDTimer
 - (void)setupJJGCDTimer{

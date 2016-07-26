@@ -7,38 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25296A741D347AEE000341B8 /* JJShakeble.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25296A731D347AEE000341B8 /* JJShakeble.h */; };
-		25296A761D347AEE000341B8 /* JJShakeble.m in Sources */ = {isa = PBXBuildFile; fileRef = 25296A751D347AEE000341B8 /* JJShakeble.m */; };
-		25296A841D3482BB000341B8 /* JJCentralble.m in Sources */ = {isa = PBXBuildFile; fileRef = 25296A831D3482BB000341B8 /* JJCentralble.m */; };
-		25296A871D34831E000341B8 /* JJFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 25296A861D34831E000341B8 /* JJFormat.m */; };
-		25B6BBB91D45A1E9005B9C38 /* JJShakeble.h in Headers */ = {isa = PBXBuildFile; fileRef = 25296A731D347AEE000341B8 /* JJShakeble.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25B6BBA71D458CB5005B9C38 /* JJNSOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25B6BBA61D458CB5005B9C38 /* JJNSOperation.h */; };
+		25B6BBA91D458CB5005B9C38 /* JJNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B6BBA81D458CB5005B9C38 /* JJNSOperation.m */; };
+		25B6BBB01D458CCF005B9C38 /* JJNSOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 25B6BBA61D458CB5005B9C38 /* JJNSOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		25296A6E1D347AEE000341B8 /* CopyFiles */ = {
+		25B6BBA11D458CB5005B9C38 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				25296A741D347AEE000341B8 /* JJShakeble.h in CopyFiles */,
+				25B6BBA71D458CB5005B9C38 /* JJNSOperation.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		25296A701D347AEE000341B8 /* libJJShakeble.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJShakeble.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		25296A731D347AEE000341B8 /* JJShakeble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJShakeble.h; sourceTree = "<group>"; };
-		25296A751D347AEE000341B8 /* JJShakeble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJShakeble.m; sourceTree = "<group>"; };
-		25296A821D3482BB000341B8 /* JJCentralble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCentralble.h; sourceTree = "<group>"; };
-		25296A831D3482BB000341B8 /* JJCentralble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCentralble.m; sourceTree = "<group>"; };
-		25296A851D34831E000341B8 /* JJFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJFormat.h; sourceTree = "<group>"; };
-		25296A861D34831E000341B8 /* JJFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJFormat.m; sourceTree = "<group>"; };
+		25B6BBA31D458CB5005B9C38 /* libJJNSOperation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJNSOperation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B6BBA61D458CB5005B9C38 /* JJNSOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJNSOperation.h; sourceTree = "<group>"; };
+		25B6BBA81D458CB5005B9C38 /* JJNSOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJNSOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		25296A6D1D347AEE000341B8 /* Frameworks */ = {
+		25B6BBA01D458CB5005B9C38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,113 +42,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		25296A671D347AEE000341B8 = {
+		25B6BB9A1D458CB5005B9C38 = {
 			isa = PBXGroup;
 			children = (
-				25296A721D347AEE000341B8 /* JJShakeble */,
-				25296A711D347AEE000341B8 /* Products */,
+				25B6BBA51D458CB5005B9C38 /* JJNSOperation */,
+				25B6BBA41D458CB5005B9C38 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		25296A711D347AEE000341B8 /* Products */ = {
+		25B6BBA41D458CB5005B9C38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				25296A701D347AEE000341B8 /* libJJShakeble.a */,
+				25B6BBA31D458CB5005B9C38 /* libJJNSOperation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		25296A721D347AEE000341B8 /* JJShakeble */ = {
+		25B6BBA51D458CB5005B9C38 /* JJNSOperation */ = {
 			isa = PBXGroup;
 			children = (
-				25296A821D3482BB000341B8 /* JJCentralble.h */,
-				25296A831D3482BB000341B8 /* JJCentralble.m */,
-				25296A731D347AEE000341B8 /* JJShakeble.h */,
-				25296A751D347AEE000341B8 /* JJShakeble.m */,
-				25296A851D34831E000341B8 /* JJFormat.h */,
-				25296A861D34831E000341B8 /* JJFormat.m */,
+				25B6BBA61D458CB5005B9C38 /* JJNSOperation.h */,
+				25B6BBA81D458CB5005B9C38 /* JJNSOperation.m */,
 			);
-			path = JJShakeble;
+			path = JJNSOperation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		25B6BBB71D45A1D9005B9C38 /* Headers */ = {
+		25B6BBAF1D458CCB005B9C38 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25B6BBB91D45A1E9005B9C38 /* JJShakeble.h in Headers */,
+				25B6BBB01D458CCF005B9C38 /* JJNSOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		25296A6F1D347AEE000341B8 /* JJShakeble */ = {
+		25B6BBA21D458CB5005B9C38 /* JJNSOperation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25296A791D347AEE000341B8 /* Build configuration list for PBXNativeTarget "JJShakeble" */;
+			buildConfigurationList = 25B6BBAC1D458CB5005B9C38 /* Build configuration list for PBXNativeTarget "JJNSOperation" */;
 			buildPhases = (
-				25296A6C1D347AEE000341B8 /* Sources */,
-				25296A6D1D347AEE000341B8 /* Frameworks */,
-				25296A6E1D347AEE000341B8 /* CopyFiles */,
-				25B6BBB71D45A1D9005B9C38 /* Headers */,
+				25B6BB9F1D458CB5005B9C38 /* Sources */,
+				25B6BBA01D458CB5005B9C38 /* Frameworks */,
+				25B6BBA11D458CB5005B9C38 /* CopyFiles */,
+				25B6BBAF1D458CCB005B9C38 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = JJShakeble;
-			productName = JJShakeble;
-			productReference = 25296A701D347AEE000341B8 /* libJJShakeble.a */;
+			name = JJNSOperation;
+			productName = JJNSOperation;
+			productReference = 25B6BBA31D458CB5005B9C38 /* libJJNSOperation.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		25296A681D347AEE000341B8 /* Project object */ = {
+		25B6BB9B1D458CB5005B9C38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = farbell;
 				TargetAttributes = {
-					25296A6F1D347AEE000341B8 = {
+					25B6BBA21D458CB5005B9C38 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
-			buildConfigurationList = 25296A6B1D347AEE000341B8 /* Build configuration list for PBXProject "JJShakeble" */;
+			buildConfigurationList = 25B6BB9E1D458CB5005B9C38 /* Build configuration list for PBXProject "JJNSOperation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 25296A671D347AEE000341B8;
-			productRefGroup = 25296A711D347AEE000341B8 /* Products */;
+			mainGroup = 25B6BB9A1D458CB5005B9C38;
+			productRefGroup = 25B6BBA41D458CB5005B9C38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				25296A6F1D347AEE000341B8 /* JJShakeble */,
+				25B6BBA21D458CB5005B9C38 /* JJNSOperation */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		25296A6C1D347AEE000341B8 /* Sources */ = {
+		25B6BB9F1D458CB5005B9C38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25296A761D347AEE000341B8 /* JJShakeble.m in Sources */,
-				25296A841D3482BB000341B8 /* JJCentralble.m in Sources */,
-				25296A871D34831E000341B8 /* JJFormat.m in Sources */,
+				25B6BBA91D458CB5005B9C38 /* JJNSOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		25296A771D347AEE000341B8 /* Debug */ = {
+		25B6BBAA1D458CB5005B9C38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -198,7 +186,7 @@
 			};
 			name = Debug;
 		};
-		25296A781D347AEE000341B8 /* Release */ = {
+		25B6BBAB1D458CB5005B9C38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -236,7 +224,7 @@
 			};
 			name = Release;
 		};
-		25296A7A1D347AEE000341B8 /* Debug */ = {
+		25B6BBAD1D458CB5005B9C38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
@@ -245,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		25296A7B1D347AEE000341B8 /* Release */ = {
+		25B6BBAE1D458CB5005B9C38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
@@ -257,25 +245,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25296A6B1D347AEE000341B8 /* Build configuration list for PBXProject "JJShakeble" */ = {
+		25B6BB9E1D458CB5005B9C38 /* Build configuration list for PBXProject "JJNSOperation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25296A771D347AEE000341B8 /* Debug */,
-				25296A781D347AEE000341B8 /* Release */,
+				25B6BBAA1D458CB5005B9C38 /* Debug */,
+				25B6BBAB1D458CB5005B9C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25296A791D347AEE000341B8 /* Build configuration list for PBXNativeTarget "JJShakeble" */ = {
+		25B6BBAC1D458CB5005B9C38 /* Build configuration list for PBXNativeTarget "JJNSOperation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25296A7A1D347AEE000341B8 /* Debug */,
-				25296A7B1D347AEE000341B8 /* Release */,
+				25B6BBAD1D458CB5005B9C38 /* Debug */,
+				25B6BBAE1D458CB5005B9C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 25296A681D347AEE000341B8 /* Project object */;
+	rootObject = 25B6BB9B1D458CB5005B9C38 /* Project object */;
 }
