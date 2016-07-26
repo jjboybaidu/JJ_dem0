@@ -7,18 +7,20 @@
 //
 
 #import "AppDelegate.h"
-#import "JJRuninbackground.h"
 #import "JJNewFeature.h"
 #import "JJTableViewRowAction.h"
 #import "JJCountdown.h"
 #import "JJAlertController.h"
 #import "ViewController.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate{
+    NSTimer *timer;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -92,16 +94,16 @@
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    
-#if 0
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        [[JJRuninbackground sharedInstance] startRunInbackGround];
-        [[NSRunLoop currentRunLoop] run];
-    });
-#endif
+-(void)applicationDidEnterBackground:(UIApplication *)application{
+    [[UIApplication sharedApplication]beginBackgroundTaskWithExpirationHandler:nil];
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(tik) userInfo:nil repeats:YES];
+    [timer setFireDate:[NSDate distantPast]];
+    // NSLog(@"[AppDelegate] 程序进入后台运行！");
+}
+- (void)tik{
+    if ([[UIApplication sharedApplication] backgroundTimeRemaining] < 61.0) {
+        [[UIApplication sharedApplication]beginBackgroundTaskWithExpirationHandler:nil];
+    }
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {

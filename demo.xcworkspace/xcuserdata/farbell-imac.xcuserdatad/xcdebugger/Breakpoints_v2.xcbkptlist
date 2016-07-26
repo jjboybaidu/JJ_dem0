@@ -202,12 +202,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JJViewController/JJViewController/AppDelegate.m"
-            timestampString = "491195527.413104"
+            timestampString = "491211121.087667"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "-applicationDidEnterBackground:"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-applicationWillResignActive:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -241,22 +241,6 @@
                   offsetFromSymbolStart = "36">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JJLogic/JJShakeble/JJShakeble/JJShakeble.m"
-            timestampString = "491191337.635801"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
-            landmarkName = "-setupCentral"
-            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
