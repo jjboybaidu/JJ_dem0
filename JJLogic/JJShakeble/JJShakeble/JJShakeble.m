@@ -65,7 +65,8 @@
 - (void)setupMotionManager{
 
     self.motionManager = [[CMMotionManager alloc] init];
-    self.motionManager.accelerometerUpdateInterval = 0.01;//加速仪更新频率，以秒为单位
+    //加速仪更新频率，以秒为单位
+    self.motionManager.accelerometerUpdateInterval = 0.01;
     isBright = YES;
     isSending = NO;
     // 开启加速计
@@ -96,6 +97,7 @@
 
 - (void)printScanStatues{
     if (myCentralManager.isScanning) {
+        [myCentralManager stopScan];
         NSLog(@"正在扫描");
     }else{
         NSLog(@"停止扫描");;
