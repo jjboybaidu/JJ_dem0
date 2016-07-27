@@ -17,27 +17,22 @@
 #define FBBLE_CHARACTERISTICS_LOCALUUID    @"FFF5"
 #define FBBLE_CHARACTERISTICS_WRITEUUID    @"FFF6"
 
-#define currenThread NSLog(@"%s currentThread%@",__func__,[NSThread currentThread]);
-
 @interface JJShakeble()<CBPeripheralDelegate,CBCentralManagerDelegate>
-@property(nonatomic,strong) CMMotionManager *motionManager;
-@property(nonatomic,strong) NSMutableArray *mutArray;
 @property(nonatomic,strong) NSMutableArray* blackNameArray;
-@property (nonatomic, strong) dispatch_source_t timer;
+@property (nonatomic, strong) dispatch_source_t scanTimer;
+@property (nonatomic, strong) dispatch_source_t writeValueTimer;
 @property (nonatomic, strong) dispatch_source_t disconnectTimer;
-@property (nonatomic, strong) NSTimer *scanTimer;
-@property (nonatomic, strong) NSTimer *printTimer;
 
 @end
 
 @implementation JJShakeble{
     BOOL isBright;
-    BOOL isSending;
-    BOOL isDiscoverPeripheral;
-    BOOL isConnectPeripheral;
-    BOOL isDiscoverServices;
-    BOOL isDiscoverCharacteristics;
+    BOOL isFree;
+    float disconnetTimeout;
+    float cyclScanInterval;
+    int   cyclScanCount;
     
+    CMMotionManager    *motionManager;
     CBCentralManager   *myCentralManager;
     CBPeripheral       *myPeripheral;
     CBCharacteristic   *myWritableCharacteristic;
@@ -45,49 +40,34 @@
     
 }
 
+
+
+
+
 - (NSMutableArray *)blackNameArray{
     if (_blackNameArray == nil) {
         _blackNameArray = [NSMutableArray array];
     }
     return _blackNameArray;
 }
-- (NSMutableArray *)mutArray{
-    if (_mutArray == nil) {
-        _mutArray = [NSMutableArray arrayWithCapacity:1];
-    }
-    return _mutArray;
+- (void)initMotionManager{
+    //切换为空闲状态
+    isFree = YES;
+    //初始化MotionManager开启更新加速度
+    [self startAccelerometerWithHandle];
 }
-
 - (void)setupMotionManager{
 
-    self.motionManager = [[CMMotionManager alloc] init];
-    
-    //加速仪更新频率，以秒为单位
-    self.motionManager.accelerometerUpdateInterval = 0.01;
+    motionManager = [[CMMotionManager alloc] init];
+    motionManager.accelerometerUpdateInterval = 0.1;
+
+    [self initMotionManager];
     isBright = YES;
-    isSending = NO;
-
-    [self startAccelerometerWithHandle];
-
-    [self registerAppforDetectBrightState];
+    cyclScanInterval = 0.05;
+    disconnetTimeout = 10;
+    cyclScanCount = disconnetTimeout/cyclScanInterval;
     
-    [self cyclePrint];
-}
-- (void)cyclePrint{
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        
-        self.printTimer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(printScanStatues) userInfo:nil repeats:YES];
-        [[NSRunLoop currentRunLoop]addTimer:self.printTimer forMode:NSRunLoopCommonModes];
-        [[NSRunLoop currentRunLoop]run];
-    });
-}
-- (void)printScanStatues{
-    if (myCentralManager.isScanning) {
-        [myCentralManager stopScan];
-        NSLog(@"正在扫描");
-    }else{
-        NSLog(@"停止扫描");;
-    }
+    [self registerAppforDetectBrightState];
 }
 -(void)registerAppforDetectBrightState {
     
@@ -96,20 +76,42 @@
         uint64_t state = UINT64_MAX;
         notify_get_state(token, &state);
         if(state == 0) {
+            //切换为亮屏
             isBright = YES;
+            //亮屏开启更新加速度
+            [self startAccelerometerWithHandle];
+            
+            [self printCurrentStatues];
+        
         } else {
+            //切换为黑屏
             isBright = NO;
-            [myCentralManager stopScan];
+            //黑屏停止加速更新
+            [motionManager stopAccelerometerUpdates];
+            
+            [self printCurrentStatues];
+            
+            //黑屏释放所有然后归位
+            [self disconnectAllTask];
+            
         }
         
     });
 }
 - (void)startAccelerometerWithHandle{
     
-    [self.motionManager startAccelerometerUpdatesToQueue:[[NSOperationQueue alloc]init] withHandler:^(CMAccelerometerData * _Nullable accelerometerData, NSError * _Nullable error) {
+    [motionManager startAccelerometerUpdatesToQueue:[[NSOperationQueue alloc]init] withHandler:^(CMAccelerometerData * _Nullable accelerometerData, NSError * _Nullable error) {
         double accelerameter =sqrt( pow( accelerometerData.acceleration.x , 2 ) + pow( accelerometerData.acceleration.y , 2 ) + pow( accelerometerData.acceleration.z , 2) );
-        if (!isSending && isBright && accelerameter > 1.6f) {
-            isSending = YES;
+        //判断是否亮屏和空闲
+        BOOL isOK = isFree && isBright;
+        //判断是不是空闲，是不是亮屏，是不是加速度大于
+        if ( isOK && accelerameter > 2.8f) {
+            //开始蓝牙连接停止加速更新
+            [motionManager stopAccelerometerUpdates];
+            //切换为非空闲状态
+            isFree = NO;
+            //使用BLE前初始化
+            [self initBLE];
             [self setupCentralManager];
         }
         
@@ -117,206 +119,139 @@
     }];
     
 }
-
-
-
-
-- (void)setupCentralManager{
-    
-    NSLog(@"开始____________开始______________开始_____________________开始________________开始________开始");
-    
-    isDiscoverPeripheral = NO;
-    isConnectPeripheral = NO;
-    isDiscoverServices = NO;
-    isDiscoverCharacteristics = NO;
-    
-    [self setupDisconnectTimerInSecond:5];
-    if(myCentralManager == nil){
-        myCentralManager = [[CBCentralManager alloc]initWithDelegate:self queue:dispatch_get_global_queue(0, 0) options:nil];
+- (void)printCurrentStatues{
+    if (isBright && isFree) {
+        NSLog(@"亮屏 + 空闲 = isOK");
     }else{
-        [self cycleScan];
+        NSLog(@"是否亮屏%d 是否空闲%d",isBright,isFree);
     }
-}
-- (void)setupDisconnectTimerInSecond:(float)second{
-    
-    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
-    self.disconnectTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
-    dispatch_time_t start = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(second * NSEC_PER_SEC));
-    uint64_t interval = (uint64_t)(0 * NSEC_PER_SEC);
-    dispatch_source_set_timer(self.disconnectTimer, start, interval, 0);
-    
-    dispatch_source_set_event_handler(self.disconnectTimer, ^{
-        
-        [self disconnectPeripheral];
-        
-    });
-    
-    dispatch_resume(self.disconnectTimer);
     
 }
-- (void)disconnectPeripheral{
+
+
+
+
+
+
+
+
+
+
+
+//初始化BLE
+- (void)initBLE{
+    
     if (myCentralManager) {
-        
-        if (self.scanTimer) {
-            [self.scanTimer invalidate];
-            self.scanTimer = nil;
-            NSLog(@"扫描计时器停止————————————————");
-        }
-        
-       if ([myCentralManager isScanning]) [myCentralManager stopScan];
-        
-        if (self.timer ) {
-            dispatch_cancel(self.timer);
-            self.timer = nil;
-        }
-        
-        if (self.disconnectTimer ) {
-            dispatch_cancel(self.disconnectTimer);
-            self.disconnectTimer = nil;
-        }
+        if ([myCentralManager isScanning]) [myCentralManager stopScan];
         
         if (myPeripheral) {
             [myCentralManager cancelPeripheralConnection:myPeripheral];
             myPeripheral = nil;
         }
         
-        isSending = NO;
+        if (myWritableCharacteristic) myWritableCharacteristic = nil;
         
-    }else{
-        return;
+        if (myLocalIDCharacteristic) myLocalIDCharacteristic = nil;
     }
 }
-
-
-
-
-- (void)centralManagerDidUpdateState:(CBCentralManager *)central{
-    if (myCentralManager.state == CBCentralManagerStatePoweredOn){
-        [self cycleScan];
-    }else if (myCentralManager.state == CBCentralManagerStatePoweredOff) {
-        if ([myCentralManager isScanning]) [myCentralManager stopScan];
-    }else{
-        return;
-    }
-}
-- (void)cycleScan{
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        
-        self.scanTimer = [NSTimer timerWithTimeInterval:0.01 target:self selector:@selector(scan) userInfo:nil repeats:YES];
-        [[NSRunLoop currentRunLoop]addTimer:self.scanTimer forMode:NSRunLoopCommonModes];
-        [[NSRunLoop currentRunLoop]run];
-    });
-}
-- (void)scan{
-    NSDictionary* scanOptions = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:CBCentralManagerScanOptionAllowDuplicatesKey];
-    [myCentralManager scanForPeripheralsWithServices:FBBLE_SERVICE_UUID options:scanOptions];
-}
-- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *, id> *)advertisementData RSSI:(NSNumber *)RSSI{
-    isDiscoverPeripheral = YES;
-    if ([peripheral.name isEqualToString:@"TrudBleAcces"]) {
-        if (self.blackNameArray.count == 0 ){
-            [myCentralManager stopScan];
-            myPeripheral = peripheral;
-            [myCentralManager connectPeripheral:peripheral options:nil];
-        }else{
-            for (NSString *string in self.blackNameArray) {
-                if (![peripheral.identifier.UUIDString isEqualToString: string]) {
-                    [myCentralManager stopScan];
-                    myPeripheral = peripheral;
-                    [myCentralManager connectPeripheral:peripheral options:nil];
-                }
-            }
-        }
-    }else{
-       if ([myCentralManager isScanning]) [myCentralManager stopScan];
-        [self cycleScan];
-        
-    }
+- (void)setupCentralManager{
     
-}
-- (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral{
-    isConnectPeripheral = YES;
-    NSLog(@"____didConnectPeripheral Peripheral connected");
-    peripheral.delegate = self;
-    [peripheral discoverServices:FBBLE_SERVICE_UUID];
-}
-- (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(nullable NSError *)error{
-    isDiscoverServices = YES;
-    NSLog(@"____didDiscoverServices Discovered service ");
-    for (CBService *service in peripheral.services){
-        [peripheral discoverCharacteristics:@[[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_WRITEUUID],[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_LOCALUUID]] forService:service];
-    }
-}
-- (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(nullable NSError *)error{
-    isDiscoverCharacteristics = YES;
-    NSLog(@"____didDiscoverCharacteristicsForService Discovered characteristic");
-    for (CBCharacteristic *characteristic in service.characteristics){
-        
-        [peripheral readValueForCharacteristic:characteristic];
-        if ( [characteristic.UUID isEqual:[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_WRITEUUID] ] ){
-            [peripheral setNotifyValue:YES forCharacteristic:characteristic];
-            myWritableCharacteristic = characteristic;
-        }
-        if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_LOCALUUID]]){
-            myLocalIDCharacteristic = characteristic;
-        }
-    }
-}
--(void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error{
+    NSLog(@"________________________________________________________开始");
     
-    if ( [characteristic.UUID isEqual:[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_WRITEUUID] ] ){
-        NSString *string = [JJFormat formatToHexadecimalStringWithNSData:characteristic.value];
-        if (string != nil && ![string isEqual: @"9000"]) {
-            
-            [self setupWriteValueWithStartTimeSinceNow:0 interval:0.8 repeatcount:3];
-        }else if([string isEqual: @"9000"]){
-            
-            if ([myCentralManager isScanning])  [myCentralManager stopScan];
-            [self disconnectPeripheral];
-            NSLog(@"棒棒哒！！");
-        }
+    [self setupDisconnectTimerInSecond:disconnetTimeout];
+    
+    if(myCentralManager == nil){
+        myCentralManager = [[CBCentralManager alloc]initWithDelegate:self queue:dispatch_get_global_queue(0, 0) options:nil];
+    }else{
+        [self setupcycleScanWithStartTimeSinceNow:0.01 interval:cyclScanInterval repeatcount:cyclScanCount];
     }
 }
-
-
-
-- (void)setupWriteValueWithStartTimeSinceNow:(float)satrttime interval:(float)intervaltime repeatcount:(int)repeatcount{
+#define mark - disconnectTimer
+- (void)setupDisconnectTimerInSecond:(float)second{
+    //初始化前先取消之前的DisconnectTimer
+    [self cancelDisconnectTimer];
     
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
-    self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    self.disconnectTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    dispatch_time_t startTimer = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(second * NSEC_PER_SEC));
+    uint64_t interval = (uint64_t)(0 * NSEC_PER_SEC);
+    dispatch_source_set_timer(self.disconnectTimer, startTimer, interval, 0);
+    
+    dispatch_source_set_event_handler(self.disconnectTimer, ^{
+        //延时释放所有
+        [self disconnectAllTask];
+        
+    });
+    
+    dispatch_resume(self.disconnectTimer);
+}
+#define mark - scanTimer
+- (void)setupcycleScanWithStartTimeSinceNow:(float)satrttime interval:(float)intervaltime repeatcount:(int)repeatcount{
+    //初始化前先取消之前的ScanTimer
+    [self cancelScanTimer];
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    self.scanTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
     dispatch_time_t start = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(satrttime * NSEC_PER_SEC));
     uint64_t interval = (uint64_t)(intervaltime * NSEC_PER_SEC);
-    dispatch_source_set_timer(self.timer, start, interval, 0);
+    dispatch_source_set_timer(self.scanTimer, start, interval, 0);
     
     __block int count = 0;
-    dispatch_source_set_event_handler(self.timer, ^{
-
+    dispatch_source_set_event_handler(self.scanTimer, ^{
+        // 执行事件
+        if ([myCentralManager isScanning]) [myCentralManager stopScan];
+        [myCentralManager scanForPeripheralsWithServices:FBBLE_SERVICE_UUID options:nil];
+        NSLog(@"进入扫描Timer");
+        
+        count++;
+        if (count == repeatcount) {
+            //扫描repeatcount后取消之前的ScanTimer
+            [self cancelScanTimer];
+            //扫描repeatcount后取消之前所有的任务
+            NSLog(@"我都扫了%d次了",repeatcount);
+            [self disconnectAllTask];
+        }
+        
+    });
+    
+    dispatch_resume(self.scanTimer);
+}
+#define mark - writeValueTimer
+- (void)setupWriteValueWithStartTimeSinceNow:(float)satrttime interval:(float)intervaltime repeatcount:(int)repeatcount{
+    //初始化前先取消之前的WriteValueTimer
+    [self cancelWriteValueTimer];
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    self.writeValueTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    dispatch_time_t start = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(satrttime * NSEC_PER_SEC));
+    uint64_t interval = (uint64_t)(intervaltime * NSEC_PER_SEC);
+    dispatch_source_set_timer(self.writeValueTimer, start, interval, 0);
+    
+    __block int count = 0;
+    dispatch_source_set_event_handler(self.writeValueTimer, ^{
+        
         if (myPeripheral && myWritableCharacteristic) {
-
+            
             [myPeripheral writeValue:[self setupUnlockCommand] forCharacteristic:myWritableCharacteristic type:1];
-            NSLog(@"已发送开锁命令");
+            NSLog(@"进入发命令Timer");
         }
         
         count++;
         if (count == repeatcount) {
             if (myPeripheral && myWritableCharacteristic) {
-                
                 [myPeripheral writeValue:[self setupDisconnectCommand] forCharacteristic:myWritableCharacteristic type:1];
                 NSLog(@"重发3次仍然失败——发送断开命令");
-                [self disconnectPeripheral];
             }
-            if (self.timer) {
-                dispatch_cancel(self.timer);
-                self.timer = nil;
-            }else{
-                return;
-            }
+            //重发repeatcount后取消之前的WriteValueTimer
+            [self cancelWriteValueTimer];
+            //重发失败释放所有
+            [self disconnectAllTask];
             
         }
         
     });
     
-    dispatch_resume(self.timer);
+    dispatch_resume(self.writeValueTimer);
 }
 - (NSData*)setupDisconnectCommand{
     NSMutableData* mutableData = [NSMutableData data];
@@ -346,6 +281,143 @@
     [mutableData appendBytes:&p3 length:1];
     return mutableData;
 }
+#define mark - cancelTimer
+- (void)cancelScanTimer{
+    if (self.scanTimer) {
+        dispatch_cancel(self.scanTimer);
+        self.scanTimer = nil;
+        NSLog(@"_停止扫描Timer");
+    }else{
+        return;
+    }
+}
+- (void)cancelWriteValueTimer{
+    if (self.writeValueTimer) {
+        dispatch_cancel(self.writeValueTimer);
+        self.writeValueTimer = nil;
+        NSLog(@"_停止发命令Timer");
+    }else{
+        return;
+    }
+}
+- (void)cancelDisconnectTimer{
+    if (self.disconnectTimer ) {
+        dispatch_cancel(self.disconnectTimer);
+        self.disconnectTimer = nil;
+        NSLog(@"________________________________________________________结束");
+    }else{
+        return;
+    }
+}
+- (void)cancelAllTimer{
+    [self cancelScanTimer];
+    [self cancelWriteValueTimer];
+    [self cancelDisconnectTimer];
+}
+- (void)disconnectAllTask{
+    if (myCentralManager) {
+        //断开连接取消所有Timer
+        [self cancelAllTimer];
+        //断开连接初始化MotionManager
+        [self initMotionManager];
+        //断开连接初始化BLE
+        [self initBLE];
+    }else{
+        return;
+    }
+}
 
+
+
+
+
+
+
+
+
+
+
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central{
+    if (myCentralManager.state == CBCentralManagerStatePoweredOn){
+        
+        [self setupcycleScanWithStartTimeSinceNow:0.01 interval:cyclScanInterval repeatcount:cyclScanCount];
+    }else if (myCentralManager.state == CBCentralManagerStatePoweredOff) {
+        //关闭蓝牙释放所有
+        [self disconnectAllTask];
+    }else{
+        return;
+    }
+}
+- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *, id> *)advertisementData RSSI:(NSNumber *)RSSI{
+    
+    [self cancelScanTimer];
+    
+    if ([peripheral.name isEqualToString:@"TrudBleAcces"]) {
+        if (self.blackNameArray.count == 0 ){
+            [myCentralManager stopScan];
+            myPeripheral = peripheral;
+            [myCentralManager connectPeripheral:peripheral options:nil];
+        }else{
+            for (NSString *string in self.blackNameArray) {
+                if (![peripheral.identifier.UUIDString isEqualToString: string]) {
+                    [myCentralManager stopScan];
+                    myPeripheral = peripheral;
+                    [myCentralManager connectPeripheral:peripheral options:nil];
+                }
+            }
+        }
+    }else{
+        return;
+    }
+    
+}
+- (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral{
+    
+    NSLog(@"____成功连接");
+    peripheral.delegate = self;
+    [peripheral discoverServices:FBBLE_SERVICE_UUID];
+}
+- (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(nullable NSError *)error{
+    
+    NSLog(@"____成功发现服务");
+    for (CBService *service in peripheral.services){
+        [peripheral discoverCharacteristics:@[[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_WRITEUUID],[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_LOCALUUID]] forService:service];
+    }
+}
+- (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(nullable NSError *)error{
+    
+    NSLog(@"____成功发现服务特征");
+    for (CBCharacteristic *characteristic in service.characteristics){
+        
+        [peripheral readValueForCharacteristic:characteristic];
+        
+        if ( [characteristic.UUID isEqual:[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_WRITEUUID] ] ){
+            [peripheral setNotifyValue:YES forCharacteristic:characteristic];
+            myWritableCharacteristic = characteristic;
+        }
+        if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_LOCALUUID]]){
+            myLocalIDCharacteristic = characteristic;
+        }
+    }
+}
+-(void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error{
+    
+    if ( [characteristic.UUID isEqual:[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_WRITEUUID] ] ){
+        
+        NSString *string = [JJFormat formatToHexadecimalStringWithNSData:characteristic.value];
+        
+        if (string != nil && ![string isEqual: @"9000"]) {
+            
+            [self setupWriteValueWithStartTimeSinceNow:0 interval:0.8 repeatcount:3];
+            
+        }else if([string isEqual: @"9000"]){
+            
+            NSLog(@"_开门成功");
+            //蓝牙开门成功释放所有
+            [self disconnectAllTask];
+            
+        }
+    }
+}
 
 @end

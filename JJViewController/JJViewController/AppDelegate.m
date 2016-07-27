@@ -13,6 +13,7 @@
 #import "JJAlertController.h"
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
+#import "JJRuninbackground.h"
 
 @interface AppDelegate ()
 
@@ -95,10 +96,19 @@
 }
 
 -(void)applicationDidEnterBackground:(UIApplication *)application{
+    [self runInBackgroundMode1];
+    // NSLog(@"[AppDelegate] 程序进入后台运行！");
+}
+- (void)runInBackgroundMode1{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [[JJRuninbackground sharedInstance] startRunInbackGround];
+        [[NSRunLoop currentRunLoop] run];
+    });
+}
+- (void)runInBackgroundMode2{
     [[UIApplication sharedApplication]beginBackgroundTaskWithExpirationHandler:nil];
     timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(tik) userInfo:nil repeats:YES];
     [timer setFireDate:[NSDate distantPast]];
-    // NSLog(@"[AppDelegate] 程序进入后台运行！");
 }
 - (void)tik{
     if ([[UIApplication sharedApplication] backgroundTimeRemaining] < 61.0) {
@@ -112,7 +122,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    // [[JJRuninbackground sharedInstance] stopAudioPlay];
+    [[JJRuninbackground sharedInstance] stopAudioPlay];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

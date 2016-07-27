@@ -178,7 +178,7 @@
 /* 使用方法
  分为5步：
  1 添加文件runInBg目录下的文件
- 2 包含头文件   #import "RunInBackground.h"
+ 2 包含头文件  #import "JJRuninbackground.h"
  3 使用全局队列实现异步执行
  4 使用单利调用startRunInbackGround方法
  5 开启循环
