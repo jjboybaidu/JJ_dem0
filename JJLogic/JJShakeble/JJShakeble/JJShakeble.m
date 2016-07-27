@@ -13,6 +13,13 @@
 #import "JJFormat.h"
 #import <CoreBluetooth/CoreBluetooth.h>
 
+#ifdef DEBUG
+#define JJLog(...) NSLog(__VA_ARGS__)
+#else
+#define JJLog(...)
+#endif
+
+
 #define FBBLE_SERVICE_UUID                 @[[CBUUID UUIDWithString:@"FFF0"]]
 #define FBBLE_CHARACTERISTICS_LOCALUUID    @"FFF5"
 #define FBBLE_CHARACTERISTICS_WRITEUUID    @"FFF6"
@@ -63,8 +70,8 @@
 
     [self initMotionManager];
     isBright = YES;
-    cyclScanInterval = 0.05;
-    disconnetTimeout = 10;
+    cyclScanInterval = 0.15;
+    disconnetTimeout = 5;
     cyclScanCount = disconnetTimeout/cyclScanInterval;
     
     [self registerAppforDetectBrightState];
@@ -115,15 +122,15 @@
             [self setupCentralManager];
         }
         
-        if (error)  NSLog(@"startAccelerometerWithHandle error:%@",error);
+        if (error)  JJLog(@"startAccelerometerWithHandle error:%@",error);
     }];
     
 }
 - (void)printCurrentStatues{
     if (isBright && isFree) {
-        NSLog(@"亮屏 + 空闲 = isOK");
+        JJLog(@"亮屏 + 空闲 = isOK");
     }else{
-        NSLog(@"是否亮屏%d 是否空闲%d",isBright,isFree);
+        JJLog(@"是否亮屏%d 是否空闲%d",isBright,isFree);
     }
     
 }
@@ -156,7 +163,7 @@
 }
 - (void)setupCentralManager{
     
-    NSLog(@"________________________________________________________开始");
+    JJLog(@"________________________________________________________开始");
     
     [self setupDisconnectTimerInSecond:disconnetTimeout];
     
@@ -201,14 +208,14 @@
         // 执行事件
         if ([myCentralManager isScanning]) [myCentralManager stopScan];
         [myCentralManager scanForPeripheralsWithServices:FBBLE_SERVICE_UUID options:nil];
-        NSLog(@"进入扫描Timer");
+        JJLog(@"进入扫描Timer");
         
         count++;
         if (count == repeatcount) {
             //扫描repeatcount后取消之前的ScanTimer
             [self cancelScanTimer];
             //扫描repeatcount后取消之前所有的任务
-            NSLog(@"我都扫了%d次了",repeatcount);
+            JJLog(@"我都扫了%d次了",repeatcount);
             [self disconnectAllTask];
         }
         
@@ -233,14 +240,14 @@
         if (myPeripheral && myWritableCharacteristic) {
             
             [myPeripheral writeValue:[self setupUnlockCommand] forCharacteristic:myWritableCharacteristic type:1];
-            NSLog(@"进入发命令Timer");
+            JJLog(@"进入发命令Timer");
         }
         
         count++;
         if (count == repeatcount) {
             if (myPeripheral && myWritableCharacteristic) {
                 [myPeripheral writeValue:[self setupDisconnectCommand] forCharacteristic:myWritableCharacteristic type:1];
-                NSLog(@"重发3次仍然失败——发送断开命令");
+                JJLog(@"重发3次仍然失败——发送断开命令");
             }
             //重发repeatcount后取消之前的WriteValueTimer
             [self cancelWriteValueTimer];
@@ -286,7 +293,7 @@
     if (self.scanTimer) {
         dispatch_cancel(self.scanTimer);
         self.scanTimer = nil;
-        NSLog(@"_停止扫描Timer");
+        JJLog(@"_停止扫描Timer");
     }else{
         return;
     }
@@ -295,7 +302,7 @@
     if (self.writeValueTimer) {
         dispatch_cancel(self.writeValueTimer);
         self.writeValueTimer = nil;
-        NSLog(@"_停止发命令Timer");
+        JJLog(@"_停止发命令Timer");
     }else{
         return;
     }
@@ -304,7 +311,7 @@
     if (self.disconnectTimer ) {
         dispatch_cancel(self.disconnectTimer);
         self.disconnectTimer = nil;
-        NSLog(@"________________________________________________________结束");
+        JJLog(@"________________________________________________________结束");
     }else{
         return;
     }
@@ -373,20 +380,20 @@
 }
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral{
     
-    NSLog(@"____成功连接");
+    JJLog(@"____成功连接");
     peripheral.delegate = self;
     [peripheral discoverServices:FBBLE_SERVICE_UUID];
 }
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(nullable NSError *)error{
     
-    NSLog(@"____成功发现服务");
+    JJLog(@"____成功发现服务");
     for (CBService *service in peripheral.services){
         [peripheral discoverCharacteristics:@[[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_WRITEUUID],[CBUUID UUIDWithString:FBBLE_CHARACTERISTICS_LOCALUUID]] forService:service];
     }
 }
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(nullable NSError *)error{
     
-    NSLog(@"____成功发现服务特征");
+    JJLog(@"____成功发现服务特征");
     for (CBCharacteristic *characteristic in service.characteristics){
         
         [peripheral readValueForCharacteristic:characteristic];
@@ -412,7 +419,7 @@
             
         }else if([string isEqual: @"9000"]){
             
-            NSLog(@"_开门成功");
+            JJLog(@"_开门成功");
             //蓝牙开门成功释放所有
             [self disconnectAllTask];
             

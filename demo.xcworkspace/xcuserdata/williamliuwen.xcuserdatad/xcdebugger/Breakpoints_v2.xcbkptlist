@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JJLogic/JJShakeble/JJShakeble/JJShakeble.m"
-            timestampString = "490029774.070837"
+            timestampString = "491319469.679081"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "-cyclePrint"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "-registerAppforDetectBrightState"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,13 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JJViewController/JJViewController/ViewController.m"
-            timestampString = "490712806.747085"
+            timestampString = "491319469.679081"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "-touchesBegan:withEvent:"
-            landmarkType = "5">
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "@implementation ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JJViewController/JJViewController/ViewController.m"
-            timestampString = "490713787.053023"
+            timestampString = "491319469.679081"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "-touchesBegan:withEvent:"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "-setupButton"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
