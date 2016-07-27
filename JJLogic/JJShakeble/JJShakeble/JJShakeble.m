@@ -407,7 +407,7 @@
         NSString *string = [JJFormat formatToHexadecimalStringWithNSData:characteristic.value];
         
         if (string != nil && ![string isEqual: @"9000"]) {
-            
+            //无限制版本
             [self setupWriteValueWithStartTimeSinceNow:0 interval:0.8 repeatcount:3];
             
         }else if([string isEqual: @"9000"]){

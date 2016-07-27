@@ -96,7 +96,8 @@
 }
 
 -(void)applicationDidEnterBackground:(UIApplication *)application{
-    [self runInBackgroundMode1];
+    //运行后台模式方式选择
+    [self runInBackgroundMode2];
     // NSLog(@"[AppDelegate] 程序进入后台运行！");
 }
 - (void)runInBackgroundMode1{
@@ -112,7 +113,7 @@
 }
 - (void)tik{
     if ([[UIApplication sharedApplication] backgroundTimeRemaining] < 61.0) {
-        [[UIApplication sharedApplication]beginBackgroundTaskWithExpirationHandler:nil];
+        [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:nil];
     }
 }
 
@@ -122,7 +123,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    [[JJRuninbackground sharedInstance] stopAudioPlay];
+    // [[JJRuninbackground sharedInstance] stopAudioPlay];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
