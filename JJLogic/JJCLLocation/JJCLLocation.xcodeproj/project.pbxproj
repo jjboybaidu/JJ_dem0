@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25B17B6B1D4CAC4C0007E2EE /* JJCLLocation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25B17B6A1D4CAC4C0007E2EE /* JJCLLocation.h */; };
+		25B17B6D1D4CAC4C0007E2EE /* JJCLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B17B6C1D4CAC4C0007E2EE /* JJCLLocation.m */; };
+		25B17B741D4CAD280007E2EE /* JJCLLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 25B17B6A1D4CAC4C0007E2EE /* JJCLLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25B17B651D4CAC4C0007E2EE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				25B17B6B1D4CAC4C0007E2EE /* JJCLLocation.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		25B17B671D4CAC4C0007E2EE /* libJJCLLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJCLLocation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B17B6A1D4CAC4C0007E2EE /* JJCLLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJCLLocation.h; sourceTree = "<group>"; };
+		25B17B6C1D4CAC4C0007E2EE /* JJCLLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJCLLocation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25B17B641D4CAC4C0007E2EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25B17B5E1D4CAC4C0007E2EE = {
+			isa = PBXGroup;
+			children = (
+				25B17B691D4CAC4C0007E2EE /* JJCLLocation */,
+				25B17B681D4CAC4C0007E2EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25B17B681D4CAC4C0007E2EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25B17B671D4CAC4C0007E2EE /* libJJCLLocation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25B17B691D4CAC4C0007E2EE /* JJCLLocation */ = {
+			isa = PBXGroup;
+			children = (
+				25B17B6A1D4CAC4C0007E2EE /* JJCLLocation.h */,
+				25B17B6C1D4CAC4C0007E2EE /* JJCLLocation.m */,
+			);
+			path = JJCLLocation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		25B17B731D4CAD250007E2EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B17B741D4CAD280007E2EE /* JJCLLocation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		25B17B661D4CAC4C0007E2EE /* JJCLLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B17B701D4CAC4C0007E2EE /* Build configuration list for PBXNativeTarget "JJCLLocation" */;
+			buildPhases = (
+				25B17B631D4CAC4C0007E2EE /* Sources */,
+				25B17B641D4CAC4C0007E2EE /* Frameworks */,
+				25B17B651D4CAC4C0007E2EE /* CopyFiles */,
+				25B17B731D4CAD250007E2EE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJCLLocation;
+			productName = JJCLLocation;
+			productReference = 25B17B671D4CAC4C0007E2EE /* libJJCLLocation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25B17B5F1D4CAC4C0007E2EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = farbell;
+				TargetAttributes = {
+					25B17B661D4CAC4C0007E2EE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 25B17B621D4CAC4C0007E2EE /* Build configuration list for PBXProject "JJCLLocation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 25B17B5E1D4CAC4C0007E2EE;
+			productRefGroup = 25B17B681D4CAC4C0007E2EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25B17B661D4CAC4C0007E2EE /* JJCLLocation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25B17B631D4CAC4C0007E2EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B17B6D1D4CAC4C0007E2EE /* JJCLLocation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		25B17B6E1D4CAC4C0007E2EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		25B17B6F1D4CAC4C0007E2EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25B17B711D4CAC4C0007E2EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		25B17B721D4CAC4C0007E2EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25B17B621D4CAC4C0007E2EE /* Build configuration list for PBXProject "JJCLLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B17B6E1D4CAC4C0007E2EE /* Debug */,
+				25B17B6F1D4CAC4C0007E2EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B17B701D4CAC4C0007E2EE /* Build configuration list for PBXNativeTarget "JJCLLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B17B711D4CAC4C0007E2EE /* Debug */,
+				25B17B721D4CAC4C0007E2EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25B17B5F1D4CAC4C0007E2EE /* Project object */;
+}
