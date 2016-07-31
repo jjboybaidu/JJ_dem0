@@ -7,50 +7,62 @@
 //
 
 #import "JJCLLocation.h"
+#import "JJCLLocationDeferUpdate.h"
+#import "JJCLLocationBackGround.h"
 
-@implementation JJCLLocation
-
-- (void)setupCLLocation{
-    if (![CLLocationManager locationServicesEnabled])
-    {
-        NSLog(@"请打开定位服务！");
-        return;
-    }
-    
-    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied) {
-        [self.locMgr requestAlwaysAuthorization];
-    }
-    else if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways)
-    {
-        self.locMgr.desiredAccuracy = kCLLocationAccuracyBest;
-        self.locMgr.distanceFilter = kCLDistanceFilterNone;
-        [self.locMgr startUpdatingLocation];
-    }
+@implementation JJCLLocation{
+    JJCLLocationDeferUpdate *deferupdateLocationManager;
+    JJCLLocationBackGround *locationBackGround;
 }
-#pragma mark CLLocationManagerDelegate
+
+-(void)setupJJCLLocationManager {
+    
+    // setupLocationBackGround
+    [self setupLocationBackGround];
+}
+
+// setupLocationBackGround
+- (void)setupLocationBackGround{
+    locationBackGround = [JJCLLocationBackGround sharedInstance];
+    [locationBackGround startUpdatingLocation];
+}
+
+// setupDeferupdateLocationManager
+- (void)setupDeferupdateLocationManager{
+    deferupdateLocationManager = [[JJCLLocationDeferUpdate alloc]init];
+    [deferupdateLocationManager initLocationManager];
+}
+- (void)enterBackGround{
+    [deferupdateLocationManager applicationWillResignActive];
+}
+
+
+
+
+
+
+
+
+
+/*
+ 
+// 判断获取的位置信息，是不是前15秒前的，而不是缓存里面的。
+// Delegate method from the CLLocationManagerDelegate protocol.
 - (void)locationManager:(CLLocationManager *)manager
-     didUpdateLocations:(NSArray<CLLocation *> *)locations
-{
-    
-    CLLocation * loc = [locations firstObject];
-    CLLocationCoordinate2D coordinate = loc.coordinate;
-    NSLog(@"经度：%f,纬度：%f,海拔：%f,航向：%f,行走速度：%f",coordinate.longitude,coordinate.latitude,loc.altitude,loc.course,loc.speed);
-    if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground)
-    {
-        NSLog(@"进入后台了！！！");
-       
+     didUpdateLocations:(NSArray *)locations {
+    // If it's a relatively recent event, turn off updates to save power.
+    CLLocation* location = [locations lastObject];
+    NSDate* eventDate = location.timestamp;
+    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+    if (abs(howRecent) < 15.0) {
+        // If the event is recent, do something with it.
+        NSLog(@"latitude %+.6f, longitude %+.6f\n",
+              location.coordinate.latitude,
+              location.coordinate.longitude);
     }
-    
 }
-#pragma mark 懒加载
--(CLLocationManager *)locMgr
-{
-    if (!_locMgr)
-    {
-        _locMgr = [[CLLocationManager alloc] init];
-        _locMgr.delegate = self;
-    }
-    return _locMgr;
-}
+ 
+*/
+
 
 @end

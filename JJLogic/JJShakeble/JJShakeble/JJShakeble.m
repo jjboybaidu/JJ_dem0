@@ -70,7 +70,7 @@
 
     [self initMotionManager];
     isBright = YES;
-    cyclScanInterval = 0.15;
+    cyclScanInterval = 0.150;
     disconnetTimeout = 5;
     cyclScanCount = disconnetTimeout/cyclScanInterval;
     

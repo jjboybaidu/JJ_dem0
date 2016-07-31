@@ -14,6 +14,7 @@
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import "JJRuninbackground.h"
+#import "JJCLLocation.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,7 @@
 
 @implementation AppDelegate{
     NSTimer *timer;
+    JJCLLocation *location;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -35,7 +37,16 @@
     // setup JJCountdown
     // [self setupJJCountdown];
     
+    // setupJJCLLocation
+    [self setupJJCLLocation];
+    
     return YES;
+}
+
+// setupJJCLLocation
+- (void)setupJJCLLocation{
+    location = [[JJCLLocation alloc]init];
+    [location setupJJCLLocationManager];
 }
 
 // setupJJCountdown
@@ -97,7 +108,7 @@
 
 -(void)applicationDidEnterBackground:(UIApplication *)application{
     //运行后台模式方式选择
-    [self runInBackgroundMode2];
+    // [self runInBackgroundMode2];
     // NSLog(@"[AppDelegate] 程序进入后台运行！");
 }
 - (void)runInBackgroundMode1{
@@ -107,15 +118,9 @@
     });
 }
 - (void)runInBackgroundMode2{
-    [[UIApplication sharedApplication]beginBackgroundTaskWithExpirationHandler:nil];
-    timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(tik) userInfo:nil repeats:YES];
-    [timer setFireDate:[NSDate distantPast]];
+    [location enterBackGround];
 }
-- (void)tik{
-    if ([[UIApplication sharedApplication] backgroundTimeRemaining] < 61.0) {
-        [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:nil];
-    }
-}
+
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.

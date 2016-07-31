@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
 
-@interface JJCLLocation : NSObject<CLLocationManagerDelegate>
-@property(nonatomic,strong)CLLocationManager * locMgr;
-@property (weak, nonatomic) IBOutlet UILabel *locLab;
+@interface JJCLLocation : NSObject
+-(void)setupJJCLLocationManager;
+- (void)enterBackGround;
+
 @end

@@ -47,7 +47,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
-            landmarkName = "-application:didReceiveLocalNotification:"
+            landmarkName = "-setupNewFeature"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -127,7 +127,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80"
-            landmarkName = "-setupJJAlertController"
+            landmarkName = "-application:didReceiveLocalNotification:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -143,7 +143,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
             endingLineNumber = "82"
-            landmarkName = "-setupJJAlertController"
+            landmarkName = "-application:didReceiveLocalNotification:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -191,7 +191,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
             endingLineNumber = "69"
-            landmarkName = "-application:didReceiveLocalNotification:"
+            landmarkName = "-setupJJTableViewRowAction"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

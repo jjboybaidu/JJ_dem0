@@ -10,6 +10,16 @@
 		25B17B6B1D4CAC4C0007E2EE /* JJCLLocation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25B17B6A1D4CAC4C0007E2EE /* JJCLLocation.h */; };
 		25B17B6D1D4CAC4C0007E2EE /* JJCLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B17B6C1D4CAC4C0007E2EE /* JJCLLocation.m */; };
 		25B17B741D4CAD280007E2EE /* JJCLLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 25B17B6A1D4CAC4C0007E2EE /* JJCLLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6598BA8F1D4DDDAC00162730 /* JJCLLocationDeferUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6598BA8D1D4DDDAC00162730 /* JJCLLocationDeferUpdate.h */; };
+		6598BA901D4DDDAC00162730 /* JJCLLocationDeferUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598BA8E1D4DDDAC00162730 /* JJCLLocationDeferUpdate.m */; };
+		6598BA931D4DE36800162730 /* JJCLLocationQuickUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6598BA911D4DE36800162730 /* JJCLLocationQuickUpdate.h */; };
+		6598BA941D4DE36800162730 /* JJCLLocationQuickUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598BA921D4DE36800162730 /* JJCLLocationQuickUpdate.m */; };
+		6598BA971D4DE57B00162730 /* JJCLLocationBackGround.h in Headers */ = {isa = PBXBuildFile; fileRef = 6598BA951D4DE57B00162730 /* JJCLLocationBackGround.h */; };
+		6598BA981D4DE57B00162730 /* JJCLLocationBackGround.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598BA961D4DE57B00162730 /* JJCLLocationBackGround.m */; };
+		6598BA9B1D4DE66600162730 /* JJCLLocationMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6598BA991D4DE66600162730 /* JJCLLocationMonitor.h */; };
+		6598BA9C1D4DE66600162730 /* JJCLLocationMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598BA9A1D4DE66600162730 /* JJCLLocationMonitor.m */; };
+		6598BA9F1D4DE6E000162730 /* JJCLLocationSignificantLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6598BA9D1D4DE6E000162730 /* JJCLLocationSignificantLocation.h */; };
+		6598BAA01D4DE6E000162730 /* JJCLLocationSignificantLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598BA9E1D4DE6E000162730 /* JJCLLocationSignificantLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +39,16 @@
 		25B17B671D4CAC4C0007E2EE /* libJJCLLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJCLLocation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B17B6A1D4CAC4C0007E2EE /* JJCLLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJCLLocation.h; sourceTree = "<group>"; };
 		25B17B6C1D4CAC4C0007E2EE /* JJCLLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJCLLocation.m; sourceTree = "<group>"; };
+		6598BA8D1D4DDDAC00162730 /* JJCLLocationDeferUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCLLocationDeferUpdate.h; sourceTree = "<group>"; };
+		6598BA8E1D4DDDAC00162730 /* JJCLLocationDeferUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCLLocationDeferUpdate.m; sourceTree = "<group>"; };
+		6598BA911D4DE36800162730 /* JJCLLocationQuickUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCLLocationQuickUpdate.h; sourceTree = "<group>"; };
+		6598BA921D4DE36800162730 /* JJCLLocationQuickUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCLLocationQuickUpdate.m; sourceTree = "<group>"; };
+		6598BA951D4DE57B00162730 /* JJCLLocationBackGround.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCLLocationBackGround.h; sourceTree = "<group>"; };
+		6598BA961D4DE57B00162730 /* JJCLLocationBackGround.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCLLocationBackGround.m; sourceTree = "<group>"; };
+		6598BA991D4DE66600162730 /* JJCLLocationMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCLLocationMonitor.h; sourceTree = "<group>"; };
+		6598BA9A1D4DE66600162730 /* JJCLLocationMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCLLocationMonitor.m; sourceTree = "<group>"; };
+		6598BA9D1D4DE6E000162730 /* JJCLLocationSignificantLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCLLocationSignificantLocation.h; sourceTree = "<group>"; };
+		6598BA9E1D4DE6E000162730 /* JJCLLocationSignificantLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCLLocationSignificantLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +83,16 @@
 			children = (
 				25B17B6A1D4CAC4C0007E2EE /* JJCLLocation.h */,
 				25B17B6C1D4CAC4C0007E2EE /* JJCLLocation.m */,
+				6598BA8D1D4DDDAC00162730 /* JJCLLocationDeferUpdate.h */,
+				6598BA8E1D4DDDAC00162730 /* JJCLLocationDeferUpdate.m */,
+				6598BA911D4DE36800162730 /* JJCLLocationQuickUpdate.h */,
+				6598BA921D4DE36800162730 /* JJCLLocationQuickUpdate.m */,
+				6598BA951D4DE57B00162730 /* JJCLLocationBackGround.h */,
+				6598BA961D4DE57B00162730 /* JJCLLocationBackGround.m */,
+				6598BA991D4DE66600162730 /* JJCLLocationMonitor.h */,
+				6598BA9A1D4DE66600162730 /* JJCLLocationMonitor.m */,
+				6598BA9D1D4DE6E000162730 /* JJCLLocationSignificantLocation.h */,
+				6598BA9E1D4DE6E000162730 /* JJCLLocationSignificantLocation.m */,
 			);
 			path = JJCLLocation;
 			sourceTree = "<group>";
@@ -74,7 +104,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6598BA8F1D4DDDAC00162730 /* JJCLLocationDeferUpdate.h in Headers */,
 				25B17B741D4CAD280007E2EE /* JJCLLocation.h in Headers */,
+				6598BA971D4DE57B00162730 /* JJCLLocationBackGround.h in Headers */,
+				6598BA9F1D4DE6E000162730 /* JJCLLocationSignificantLocation.h in Headers */,
+				6598BA9B1D4DE66600162730 /* JJCLLocationMonitor.h in Headers */,
+				6598BA931D4DE36800162730 /* JJCLLocationQuickUpdate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6598BAA01D4DE6E000162730 /* JJCLLocationSignificantLocation.m in Sources */,
 				25B17B6D1D4CAC4C0007E2EE /* JJCLLocation.m in Sources */,
+				6598BA901D4DDDAC00162730 /* JJCLLocationDeferUpdate.m in Sources */,
+				6598BA941D4DE36800162730 /* JJCLLocationQuickUpdate.m in Sources */,
+				6598BA9C1D4DE66600162730 /* JJCLLocationMonitor.m in Sources */,
+				6598BA981D4DE57B00162730 /* JJCLLocationBackGround.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
