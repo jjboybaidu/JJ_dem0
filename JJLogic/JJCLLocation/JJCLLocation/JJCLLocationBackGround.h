@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
 
-@interface JJCLLocationBackGround : NSObject<CLLocationManagerDelegate>
-@property(nonatomic,strong)CLLocationManager * locationManager;
+@interface JJCLLocationBackGround : NSObject
 + (instancetype)sharedInstance;
 - (void)startUpdatingLocation;
+
 @end

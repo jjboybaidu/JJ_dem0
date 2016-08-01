@@ -7,6 +7,12 @@
 //
 
 #import "JJCLLocationBackGround.h"
+#import <CoreLocation/CoreLocation.h>
+
+@interface JJCLLocationBackGround()<CLLocationManagerDelegate>
+@property(nonatomic,strong)CLLocationManager * locationManager;
+
+@end
 
 @implementation JJCLLocationBackGround{
      NSDate *lastTimestamp;
