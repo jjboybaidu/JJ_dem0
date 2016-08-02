@@ -7,6 +7,7 @@
 //
 
 #import "JJCLLocationBackGround.h"
+#import "JJCLLocationGeocode.h"
 #import <CoreLocation/CoreLocation.h>
 
 @interface JJCLLocationBackGround()<CLLocationManagerDelegate>
@@ -16,6 +17,7 @@
 
 @implementation JJCLLocationBackGround{
      NSDate *lastTimestamp;
+    JJCLLocationGeocode *geocode;
 }
 
 // WAY 1
@@ -32,6 +34,7 @@
         instance.locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers; // you can use kCLLocationAccuracyHundredMeters to get better battery life
         instance.locationManager.pausesLocationUpdatesAutomatically = NO; // this is important
         instance.locationManager.activityType = CLActivityTypeAutomotiveNavigation;// 定义位置更新数据用来作为步行导航
+        // instance.locationManager.distanceFilter = 500;// 相隔500米更新一次
     });
     
     return sharedInstance;
@@ -68,6 +71,14 @@
     CLLocation *mostRecentLocation = locations.lastObject;
     NSLog(@"Current location: %@ %@", @(mostRecentLocation.coordinate.latitude), @(mostRecentLocation.coordinate.longitude));
     
+    geocode = [JJCLLocationGeocode sharedInstance];
+    // Geocode地理编码 地名-->坐标
+    [geocode geocode:@"北京"];
+    
+    // reverse Geocode反地理编码 坐标-->地名
+    // [geocode reverseGeocode:locations];
+    
+    
     NSDate *now = [NSDate date];
     NSTimeInterval interval = lastTimestamp ? [now timeIntervalSinceDate:lastTimestamp] : 0;
     
@@ -77,7 +88,6 @@
         NSLog(@"Sending current location to web service.");
     }
 }
-
 
 
 // WAY 2

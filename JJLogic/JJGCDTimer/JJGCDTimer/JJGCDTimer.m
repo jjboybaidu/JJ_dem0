@@ -25,6 +25,22 @@
     [self setupSonThreadDelayInSecond:4];
 }
 
+// 使用dispatch_once创建单例
++ (JJGCDTimer *)shareInstance{
+    static id _instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _instance = [[JJGCDTimer alloc]init];
+    });
+    return _instance;
+}
++ (void)shareInstanceXX{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // 只执行1次的代码(这里面默认是线程安全的)
+    });
+}
+
 
 // 主线程：延迟?秒后执行1次
 - (void)setupMainThreadDelayInSecond:(float)second{

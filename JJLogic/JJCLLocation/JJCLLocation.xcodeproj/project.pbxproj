@@ -20,6 +20,8 @@
 		6598BA9C1D4DE66600162730 /* JJCLLocationMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598BA9A1D4DE66600162730 /* JJCLLocationMonitor.m */; };
 		6598BA9F1D4DE6E000162730 /* JJCLLocationSignificantLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6598BA9D1D4DE6E000162730 /* JJCLLocationSignificantLocation.h */; };
 		6598BAA01D4DE6E000162730 /* JJCLLocationSignificantLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598BA9E1D4DE6E000162730 /* JJCLLocationSignificantLocation.m */; };
+		65B01F021D5030E800D9C17C /* JJCLLocationGeocode.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B01F001D5030E800D9C17C /* JJCLLocationGeocode.h */; };
+		65B01F031D5030E800D9C17C /* JJCLLocationGeocode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B01F011D5030E800D9C17C /* JJCLLocationGeocode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +51,8 @@
 		6598BA9A1D4DE66600162730 /* JJCLLocationMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCLLocationMonitor.m; sourceTree = "<group>"; };
 		6598BA9D1D4DE6E000162730 /* JJCLLocationSignificantLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCLLocationSignificantLocation.h; sourceTree = "<group>"; };
 		6598BA9E1D4DE6E000162730 /* JJCLLocationSignificantLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCLLocationSignificantLocation.m; sourceTree = "<group>"; };
+		65B01F001D5030E800D9C17C /* JJCLLocationGeocode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCLLocationGeocode.h; sourceTree = "<group>"; };
+		65B01F011D5030E800D9C17C /* JJCLLocationGeocode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCLLocationGeocode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				6598BA9A1D4DE66600162730 /* JJCLLocationMonitor.m */,
 				6598BA9D1D4DE6E000162730 /* JJCLLocationSignificantLocation.h */,
 				6598BA9E1D4DE6E000162730 /* JJCLLocationSignificantLocation.m */,
+				65B01F001D5030E800D9C17C /* JJCLLocationGeocode.h */,
+				65B01F011D5030E800D9C17C /* JJCLLocationGeocode.m */,
 			);
 			path = JJCLLocation;
 			sourceTree = "<group>";
@@ -107,6 +113,7 @@
 				6598BA8F1D4DDDAC00162730 /* JJCLLocationDeferUpdate.h in Headers */,
 				25B17B741D4CAD280007E2EE /* JJCLLocation.h in Headers */,
 				6598BA971D4DE57B00162730 /* JJCLLocationBackGround.h in Headers */,
+				65B01F021D5030E800D9C17C /* JJCLLocationGeocode.h in Headers */,
 				6598BA9F1D4DE6E000162730 /* JJCLLocationSignificantLocation.h in Headers */,
 				6598BA9B1D4DE66600162730 /* JJCLLocationMonitor.h in Headers */,
 				6598BA931D4DE36800162730 /* JJCLLocationQuickUpdate.h in Headers */,
@@ -176,6 +183,7 @@
 				6598BA941D4DE36800162730 /* JJCLLocationQuickUpdate.m in Sources */,
 				6598BA9C1D4DE66600162730 /* JJCLLocationMonitor.m in Sources */,
 				6598BA981D4DE57B00162730 /* JJCLLocationBackGround.m in Sources */,
+				65B01F031D5030E800D9C17C /* JJCLLocationGeocode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
