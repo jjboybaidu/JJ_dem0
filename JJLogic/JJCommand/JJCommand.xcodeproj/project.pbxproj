@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25C095611D51C0DD008FE52C /* JJCommandParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C095601D51C0DD008FE52C /* JJCommandParam.m */; };
+		25C095641D51C29E008FE52C /* JJFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C095631D51C29E008FE52C /* JJFormat.m */; };
+		25C095671D51C456008FE52C /* JJCommandTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C095661D51C456008FE52C /* JJCommandTime.m */; };
+		25C0956A1D51C581008FE52C /* JJCommandNetworkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C095691D51C581008FE52C /* JJCommandNetworkData.m */; };
+		25C0956D1D51C64F008FE52C /* JJCommandNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C0956C1D51C64F008FE52C /* JJCommandNetwork.m */; };
+		25C095701D51C7CA008FE52C /* JJCommandX.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C0956F1D51C7CA008FE52C /* JJCommandX.m */; };
+		25C095741D51C9A2008FE52C /* JJCommandTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C095731D51C9A2008FE52C /* JJCommandTask.m */; };
+		25C095771D51CBDA008FE52C /* JJCommandSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C095761D51CBDA008FE52C /* JJCommandSender.m */; };
+		25C0957A1D51CC00008FE52C /* JJCommandReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C095791D51CC00008FE52C /* JJCommandReceiver.m */; };
+		25C0957D1D51CEEE008FE52C /* JJCommandANTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C0957C1D51CEEE008FE52C /* JJCommandANTask.m */; };
 		653297A21D30B6D4001A6CDB /* JJCommand.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 653297A11D30B6D4001A6CDB /* JJCommand.h */; };
 		653297A41D30B6D4001A6CDB /* JJCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 653297A31D30B6D4001A6CDB /* JJCommand.m */; };
 		946600E575F2D97F8FD1327D /* libPods-JJCommand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0DB7BE939787343836F07D /* libPods-JJCommand.a */; };
@@ -27,6 +37,27 @@
 
 /* Begin PBXFileReference section */
 		0912C5A9D8BD15A7C7893DEB /* Pods-JJCommand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJCommand.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-JJCommand/Pods-JJCommand.release.xcconfig"; sourceTree = "<group>"; };
+		25C0955F1D51C0DD008FE52C /* JJCommandParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCommandParam.h; sourceTree = "<group>"; };
+		25C095601D51C0DD008FE52C /* JJCommandParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCommandParam.m; sourceTree = "<group>"; };
+		25C095621D51C29E008FE52C /* JJFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJFormat.h; sourceTree = "<group>"; };
+		25C095631D51C29E008FE52C /* JJFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJFormat.m; sourceTree = "<group>"; };
+		25C095651D51C456008FE52C /* JJCommandTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCommandTime.h; sourceTree = "<group>"; };
+		25C095661D51C456008FE52C /* JJCommandTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCommandTime.m; sourceTree = "<group>"; };
+		25C095681D51C581008FE52C /* JJCommandNetworkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCommandNetworkData.h; sourceTree = "<group>"; };
+		25C095691D51C581008FE52C /* JJCommandNetworkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCommandNetworkData.m; sourceTree = "<group>"; };
+		25C0956B1D51C64F008FE52C /* JJCommandNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCommandNetwork.h; sourceTree = "<group>"; };
+		25C0956C1D51C64F008FE52C /* JJCommandNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCommandNetwork.m; sourceTree = "<group>"; };
+		25C0956E1D51C7CA008FE52C /* JJCommandX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCommandX.h; sourceTree = "<group>"; };
+		25C0956F1D51C7CA008FE52C /* JJCommandX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCommandX.m; sourceTree = "<group>"; };
+		25C095711D51C919008FE52C /* JJCommandNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJCommandNotification.h; sourceTree = "<group>"; };
+		25C095721D51C9A2008FE52C /* JJCommandTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCommandTask.h; sourceTree = "<group>"; };
+		25C095731D51C9A2008FE52C /* JJCommandTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCommandTask.m; sourceTree = "<group>"; };
+		25C095751D51CBDA008FE52C /* JJCommandSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCommandSender.h; sourceTree = "<group>"; };
+		25C095761D51CBDA008FE52C /* JJCommandSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCommandSender.m; sourceTree = "<group>"; };
+		25C095781D51CBFF008FE52C /* JJCommandReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCommandReceiver.h; sourceTree = "<group>"; };
+		25C095791D51CC00008FE52C /* JJCommandReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCommandReceiver.m; sourceTree = "<group>"; };
+		25C0957B1D51CEEE008FE52C /* JJCommandANTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCommandANTask.h; sourceTree = "<group>"; };
+		25C0957C1D51CEEE008FE52C /* JJCommandANTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCommandANTask.m; sourceTree = "<group>"; };
 		6532979E1D30B6D3001A6CDB /* libJJCommand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJCommand.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		653297A11D30B6D4001A6CDB /* JJCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJCommand.h; sourceTree = "<group>"; };
 		653297A31D30B6D4001A6CDB /* JJCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJCommand.m; sourceTree = "<group>"; };
@@ -68,9 +99,30 @@
 		653297A01D30B6D4001A6CDB /* JJCommand */ = {
 			isa = PBXGroup;
 			children = (
+				25C095621D51C29E008FE52C /* JJFormat.h */,
+				25C095631D51C29E008FE52C /* JJFormat.m */,
 				653297A11D30B6D4001A6CDB /* JJCommand.h */,
 				653297A31D30B6D4001A6CDB /* JJCommand.m */,
+				25C0956E1D51C7CA008FE52C /* JJCommandX.h */,
+				25C0956F1D51C7CA008FE52C /* JJCommandX.m */,
 				653298381D30BA89001A6CDB /* JJTestcommand.h */,
+				25C0955F1D51C0DD008FE52C /* JJCommandParam.h */,
+				25C095601D51C0DD008FE52C /* JJCommandParam.m */,
+				25C095651D51C456008FE52C /* JJCommandTime.h */,
+				25C095661D51C456008FE52C /* JJCommandTime.m */,
+				25C095681D51C581008FE52C /* JJCommandNetworkData.h */,
+				25C095691D51C581008FE52C /* JJCommandNetworkData.m */,
+				25C0956B1D51C64F008FE52C /* JJCommandNetwork.h */,
+				25C0956C1D51C64F008FE52C /* JJCommandNetwork.m */,
+				25C095711D51C919008FE52C /* JJCommandNotification.h */,
+				25C095721D51C9A2008FE52C /* JJCommandTask.h */,
+				25C095731D51C9A2008FE52C /* JJCommandTask.m */,
+				25C0957B1D51CEEE008FE52C /* JJCommandANTask.h */,
+				25C0957C1D51CEEE008FE52C /* JJCommandANTask.m */,
+				25C095751D51CBDA008FE52C /* JJCommandSender.h */,
+				25C095761D51CBDA008FE52C /* JJCommandSender.m */,
+				25C095781D51CBFF008FE52C /* JJCommandReceiver.h */,
+				25C095791D51CC00008FE52C /* JJCommandReceiver.m */,
 			);
 			path = JJCommand;
 			sourceTree = "<group>";
@@ -99,11 +151,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 653297A71D30B6D4001A6CDB /* Build configuration list for PBXNativeTarget "JJCommand" */;
 			buildPhases = (
+				5D0752ACC1B59C5CD831B13B /* 📦 Check Pods Manifest.lock */,
 				4276B2BAFE12C37A767EB31F /* [CP] Check Pods Manifest.lock */,
 				6532979A1D30B6D3001A6CDB /* Sources */,
 				6532979B1D30B6D3001A6CDB /* Frameworks */,
 				6532979C1D30B6D3001A6CDB /* CopyFiles */,
 				A6D31C778F1FFD9507D744A1 /* [CP] Copy Pods Resources */,
+				E72EEE4570CB8507627BB715 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,6 +216,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		5D0752ACC1B59C5CD831B13B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		A6D31C778F1FFD9507D744A1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +246,21 @@
 			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-JJCommand/Pods-JJCommand-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E72EEE4570CB8507627BB715 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-JJCommand/Pods-JJCommand-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -184,7 +268,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C0957A1D51CC00008FE52C /* JJCommandReceiver.m in Sources */,
+				25C095741D51C9A2008FE52C /* JJCommandTask.m in Sources */,
+				25C0956D1D51C64F008FE52C /* JJCommandNetwork.m in Sources */,
+				25C0957D1D51CEEE008FE52C /* JJCommandANTask.m in Sources */,
+				25C095671D51C456008FE52C /* JJCommandTime.m in Sources */,
 				653297A41D30B6D4001A6CDB /* JJCommand.m in Sources */,
+				25C095611D51C0DD008FE52C /* JJCommandParam.m in Sources */,
+				25C0956A1D51C581008FE52C /* JJCommandNetworkData.m in Sources */,
+				25C095641D51C29E008FE52C /* JJFormat.m in Sources */,
+				25C095771D51CBDA008FE52C /* JJCommandSender.m in Sources */,
+				25C095701D51C7CA008FE52C /* JJCommandX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

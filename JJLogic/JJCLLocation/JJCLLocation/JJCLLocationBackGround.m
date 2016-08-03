@@ -73,10 +73,10 @@
     
     geocode = [JJCLLocationGeocode sharedInstance];
     // Geocode地理编码 地名-->坐标
-    [geocode geocode:@"北京"];
+    // [geocode geocode:@"北京"];
     
     // reverse Geocode反地理编码 坐标-->地名
-    // [geocode reverseGeocode:locations];
+    [geocode reverseGeocode:locations];
     
     
     NSDate *now = [NSDate date];

@@ -287,7 +287,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
-            landmarkName = "-locationManager:didUpdateLocations:"
+            landmarkName = "-startUpdatingLocation"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
