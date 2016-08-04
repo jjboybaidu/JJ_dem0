@@ -15,6 +15,7 @@
 #import "JJUILocalNotification.h"
 #import "JJGCDTimer.h"
 #import "JJNSOperation.h"
+#import "JJHideKeyboard.h"
 
 @interface ViewController ()
 
@@ -49,6 +50,19 @@
     
     // setup JJNSOperation
     // [self setupJJNSOperation];
+    
+    // setup JJTextView
+    [self setupJJTextView];
+}
+
+// setup JJTextView
+- (void)setupJJTextView{
+    UITextView *textview= [[UITextView alloc]initWithFrame:CGRectMake(50, 50, 200, 200)];
+    textview.backgroundColor = [UIColor grayColor];
+    JJHideKeyboard *hitview = [[JJHideKeyboard alloc]init];
+    hitview.backgroundColor = [UIColor whiteColor];
+    self.view = hitview;
+    [self.view addSubview:textview];
 }
 
 // setup JJNSOperation

@@ -38,7 +38,7 @@
     // [self setupJJCountdown];
     
     // setupJJCLLocation
-    [self setupJJCLLocation];
+    // [self setupJJCLLocation];
     
     return YES;
 }

@@ -15,6 +15,7 @@
 		25C0959A1D51DEF1008FE52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C095981D51DEF1008FE52C /* LaunchScreen.storyboard */; };
 		25C095A31D51DF38008FE52C /* JJCLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C095A21D51DF38008FE52C /* JJCLLocation.m */; };
 		25C095A91D51DF99008FE52C /* JJCLLocationGeocode.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C095A81D51DF99008FE52C /* JJCLLocationGeocode.m */; };
+		656D987B1D52222C00A95AA2 /* JJHideKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 656D987A1D52222C00A95AA2 /* JJHideKeyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		25C095A21D51DF38008FE52C /* JJCLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCLLocation.m; sourceTree = "<group>"; };
 		25C095A71D51DF99008FE52C /* JJCLLocationGeocode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCLLocationGeocode.h; sourceTree = "<group>"; };
 		25C095A81D51DF99008FE52C /* JJCLLocationGeocode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCLLocationGeocode.m; sourceTree = "<group>"; };
+		656D98791D52222C00A95AA2 /* JJHideKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHideKeyboard.h; sourceTree = "<group>"; };
+		656D987A1D52222C00A95AA2 /* JJHideKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHideKeyboard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				25C095A81D51DF99008FE52C /* JJCLLocationGeocode.m */,
 				25C095A11D51DF38008FE52C /* JJCLLocation.h */,
 				25C095A21D51DF38008FE52C /* JJCLLocation.m */,
+				656D98791D52222C00A95AA2 /* JJHideKeyboard.h */,
+				656D987A1D52222C00A95AA2 /* JJHideKeyboard.m */,
 				25C0958D1D51DEF1008FE52C /* AppDelegate.h */,
 				25C0958E1D51DEF1008FE52C /* AppDelegate.m */,
 				25C095901D51DEF1008FE52C /* ViewController.h */,
@@ -164,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656D987B1D52222C00A95AA2 /* JJHideKeyboard.m in Sources */,
 				25C095921D51DEF1008FE52C /* ViewController.m in Sources */,
 				25C0958F1D51DEF1008FE52C /* AppDelegate.m in Sources */,
 				25C0958C1D51DEF1008FE52C /* main.m in Sources */,
@@ -317,6 +323,7 @@
 				25C095A01D51DEF1008FE52C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

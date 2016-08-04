@@ -29,6 +29,7 @@
 		25EBE71F1D419B6800725321 /* libJJGCDTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EBE71E1D419B6800725321 /* libJJGCDTimer.a */; };
 		653296DE1D2FEB69001A6CDB /* libJJBLECentralManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 653296DD1D2FEB69001A6CDB /* libJJBLECentralManager.a */; };
 		65684A1D1D3FAAD900317800 /* libJJUILocalNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65684A1C1D3FAAD900317800 /* libJJUILocalNotification.a */; };
+		656D98781D5220B900A95AA2 /* libJJHideKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 656D98771D5220B900A95AA2 /* libJJHideKeyboard.a */; };
 		659504111D33D74500DE81A4 /* libJJShake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 659504101D33D74500DE81A4 /* libJJShake.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		25EBE71E1D419B6800725321 /* libJJGCDTimer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJGCDTimer.a; path = "../JJLogic/JJGCDTimer/build/Debug-iphoneos/libJJGCDTimer.a"; sourceTree = "<group>"; };
 		653296DD1D2FEB69001A6CDB /* libJJBLECentralManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJBLECentralManager.a; path = "../JJBLECentralManager/build/Debug-iphoneos/libJJBLECentralManager.a"; sourceTree = "<group>"; };
 		65684A1C1D3FAAD900317800 /* libJJUILocalNotification.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJUILocalNotification.a; path = "../JJUI/JJUILocalNotification/build/Debug-iphoneos/libJJUILocalNotification.a"; sourceTree = "<group>"; };
+		656D98771D5220B900A95AA2 /* libJJHideKeyboard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJHideKeyboard.a; path = "../JJUI/JJHideKeyboard/build/Debug-iphoneos/libJJHideKeyboard.a"; sourceTree = "<group>"; };
 		659504101D33D74500DE81A4 /* libJJShake.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJShake.a; path = "../JJUI/JJShake/build/Debug-iphoneos/libJJShake.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656D98781D5220B900A95AA2 /* libJJHideKeyboard.a in Frameworks */,
 				25B17B761D4CAD330007E2EE /* libJJCLLocation.a in Frameworks */,
 				25B6BBB21D458CDC005B9C38 /* libJJNSOperation.a in Frameworks */,
 				25EBE71F1D419B6800725321 /* libJJGCDTimer.a in Frameworks */,
@@ -103,6 +106,7 @@
 		25BE8D491D2F79EE001463AC = {
 			isa = PBXGroup;
 			children = (
+				656D98771D5220B900A95AA2 /* libJJHideKeyboard.a */,
 				25B17B751D4CAD330007E2EE /* libJJCLLocation.a */,
 				25B6BBE41D45AD2F005B9C38 /* libJJRuninbackground.a */,
 				25B6BBB11D458CDC005B9C38 /* libJJNSOperation.a */,

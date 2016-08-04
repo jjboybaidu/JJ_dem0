@@ -8,6 +8,9 @@
       location = "container:"
       name = "JJUI">
       <FileRef
+         location = "group:JJUI/JJHideKeyboard/JJHideKeyboard.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:JJUI/JJUILocalNotification/JJUILocalNotification.xcodeproj">
       </FileRef>
       <FileRef

@@ -53,7 +53,7 @@
         // for iOS 8
         if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)])
         {
-            [self.locationManager requestWhenInUseAuthorization];
+            [self.locationManager requestAlwaysAuthorization];
         }
         // for iOS 9
         if ([self.locationManager respondsToSelector:@selector(setAllowsBackgroundLocationUpdates:)])
