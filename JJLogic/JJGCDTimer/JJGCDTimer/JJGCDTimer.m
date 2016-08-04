@@ -113,7 +113,7 @@
     dispatch_resume(self.timer);
 }
 
-
+// 参考代码（无价值）
 - (void)reference{
     __block int count = 0;
     

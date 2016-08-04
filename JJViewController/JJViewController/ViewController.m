@@ -33,7 +33,7 @@
     // [self setupJJFormat];
     
     // setup JJShakeble
-    [self setupJJShaekble];
+    // [self setupJJShaekble];
     
     // setup JJCoreMotin
     // [self setupJJCoreMotion];
