@@ -30,6 +30,8 @@
 		653296DE1D2FEB69001A6CDB /* libJJBLECentralManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 653296DD1D2FEB69001A6CDB /* libJJBLECentralManager.a */; };
 		65684A1D1D3FAAD900317800 /* libJJUILocalNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65684A1C1D3FAAD900317800 /* libJJUILocalNotification.a */; };
 		656D98781D5220B900A95AA2 /* libJJHideKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 656D98771D5220B900A95AA2 /* libJJHideKeyboard.a */; };
+		658249F31D58C405008D65F3 /* JJDelegateAviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658249F01D58C405008D65F3 /* JJDelegateAviewController.m */; };
+		658249F41D58C405008D65F3 /* JJDelegateBviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658249F21D58C405008D65F3 /* JJDelegateBviewController.m */; };
 		659504111D33D74500DE81A4 /* libJJShake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 659504101D33D74500DE81A4 /* libJJShake.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,10 @@
 		653296DD1D2FEB69001A6CDB /* libJJBLECentralManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJBLECentralManager.a; path = "../JJBLECentralManager/build/Debug-iphoneos/libJJBLECentralManager.a"; sourceTree = "<group>"; };
 		65684A1C1D3FAAD900317800 /* libJJUILocalNotification.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJUILocalNotification.a; path = "../JJUI/JJUILocalNotification/build/Debug-iphoneos/libJJUILocalNotification.a"; sourceTree = "<group>"; };
 		656D98771D5220B900A95AA2 /* libJJHideKeyboard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJHideKeyboard.a; path = "../JJUI/JJHideKeyboard/build/Debug-iphoneos/libJJHideKeyboard.a"; sourceTree = "<group>"; };
+		658249EF1D58C405008D65F3 /* JJDelegateAviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJDelegateAviewController.h; sourceTree = "<group>"; };
+		658249F01D58C405008D65F3 /* JJDelegateAviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJDelegateAviewController.m; sourceTree = "<group>"; };
+		658249F11D58C405008D65F3 /* JJDelegateBviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJDelegateBviewController.h; sourceTree = "<group>"; };
+		658249F21D58C405008D65F3 /* JJDelegateBviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJDelegateBviewController.m; sourceTree = "<group>"; };
 		659504101D33D74500DE81A4 /* libJJShake.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJShake.a; path = "../JJUI/JJShake/build/Debug-iphoneos/libJJShake.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +148,10 @@
 				25BE8D591D2F79EE001463AC /* AppDelegate.m */,
 				25BE8D5B1D2F79EE001463AC /* ViewController.h */,
 				25BE8D5C1D2F79EE001463AC /* ViewController.m */,
+				658249EF1D58C405008D65F3 /* JJDelegateAviewController.h */,
+				658249F01D58C405008D65F3 /* JJDelegateAviewController.m */,
+				658249F11D58C405008D65F3 /* JJDelegateBviewController.h */,
+				658249F21D58C405008D65F3 /* JJDelegateBviewController.m */,
 				25BE8D5E1D2F79EE001463AC /* Main.storyboard */,
 				25BE8D611D2F79EE001463AC /* Assets.xcassets */,
 				25BE8D631D2F79EE001463AC /* LaunchScreen.storyboard */,
@@ -237,6 +247,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658249F41D58C405008D65F3 /* JJDelegateBviewController.m in Sources */,
+				658249F31D58C405008D65F3 /* JJDelegateAviewController.m in Sources */,
 				25BE8D5D1D2F79EE001463AC /* ViewController.m in Sources */,
 				25BE8D5A1D2F79EE001463AC /* AppDelegate.m in Sources */,
 				25B6BBEB1D45AD9F005B9C38 /* JJRuninbackground.m in Sources */,

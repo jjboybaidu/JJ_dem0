@@ -52,7 +52,7 @@
     // [self setupJJNSOperation];
     
     // setup JJTextView
-    [self setupJJTextView];
+    // [self setupJJTextView];
 }
 
 // setup JJTextView

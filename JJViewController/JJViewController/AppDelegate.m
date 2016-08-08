@@ -15,6 +15,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "JJRuninbackground.h"
 #import "JJCLLocation.h"
+#import "JJDelegateAviewController.h"
 
 @interface AppDelegate ()
 
@@ -40,7 +41,18 @@
     // setupJJCLLocation
     // [self setupJJCLLocation];
     
+    // setupJJDelegateBviewController
+    [self setupJJDelegateBviewController];
+    
     return YES;
+}
+
+// setupJJDelegateBviewController
+- (void)setupJJDelegateBviewController{
+    JJDelegateAviewController *aViewController = [[JJDelegateAviewController alloc]init];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:aViewController];
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
 }
 
 // setupJJCLLocation
