@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2519A6091D3DAA2E00625502 /* libJJRunLoopObserver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2519A6081D3DAA2E00625502 /* libJJRunLoopObserver.a */; };
 		25296A801D3480B4000341B8 /* libJJShakeble.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25296A7F1D3480B4000341B8 /* libJJShakeble.a */; };
+		25447BB01D59C3AF0099F091 /* qrcode_scanline_qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 25447BAF1D59C3AF0099F091 /* qrcode_scanline_qrcode.png */; };
+		25447BB21D59C63D0099F091 /* libJJScanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25447BB11D59C63D0099F091 /* libJJScanner.a */; };
 		255604431D34C2DB004B433D /* libJJCoreMotion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 255604421D34C2DB004B433D /* libJJCoreMotion.a */; };
 		255604621D35E144004B433D /* libJJNewFeature.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 255604611D35E144004B433D /* libJJNewFeature.a */; };
 		2556047C1D362617004B433D /* libJJTableViewRowAction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2556047B1D362617004B433D /* libJJTableViewRowAction.a */; };
@@ -38,6 +40,9 @@
 /* Begin PBXFileReference section */
 		2519A6081D3DAA2E00625502 /* libJJRunLoopObserver.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJRunLoopObserver.a; path = "../JJLogic/JJRunLoopObserver/build/Debug-iphoneos/libJJRunLoopObserver.a"; sourceTree = "<group>"; };
 		25296A7F1D3480B4000341B8 /* libJJShakeble.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJShakeble.a; path = "../JJLogic/JJShakeble/build/Debug-iphoneos/libJJShakeble.a"; sourceTree = "<group>"; };
+		25447BA51D59B3F60099F091 /* libJJScanner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJScanner.a; path = "../JJUI/JJScanner/build/Debug-iphoneos/libJJScanner.a"; sourceTree = "<group>"; };
+		25447BAF1D59C3AF0099F091 /* qrcode_scanline_qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qrcode_scanline_qrcode.png; path = Assets.xcassets/qrcode_scanline_qrcode.imageset/qrcode_scanline_qrcode.png; sourceTree = "<group>"; };
+		25447BB11D59C63D0099F091 /* libJJScanner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJScanner.a; path = "../JJUI/JJScanner/build/Debug-iphoneos/libJJScanner.a"; sourceTree = "<group>"; };
 		255604421D34C2DB004B433D /* libJJCoreMotion.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJCoreMotion.a; path = "../JJLogic/JJCoreMotion/build/Debug-iphoneos/libJJCoreMotion.a"; sourceTree = "<group>"; };
 		255604611D35E144004B433D /* libJJNewFeature.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJNewFeature.a; path = "../JJUI/JJNewFeature/build/Debug-iphoneos/libJJNewFeature.a"; sourceTree = "<group>"; };
 		2556047B1D362617004B433D /* libJJTableViewRowAction.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJTableViewRowAction.a; path = "../JJUI/JJTableViewRowAction/build/Debug-iphoneos/libJJTableViewRowAction.a"; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25447BB21D59C63D0099F091 /* libJJScanner.a in Frameworks */,
 				656D98781D5220B900A95AA2 /* libJJHideKeyboard.a in Frameworks */,
 				25B17B761D4CAD330007E2EE /* libJJCLLocation.a in Frameworks */,
 				25B6BBB21D458CDC005B9C38 /* libJJNSOperation.a in Frameworks */,
@@ -112,6 +118,8 @@
 		25BE8D491D2F79EE001463AC = {
 			isa = PBXGroup;
 			children = (
+				25447BB11D59C63D0099F091 /* libJJScanner.a */,
+				25447BA51D59B3F60099F091 /* libJJScanner.a */,
 				656D98771D5220B900A95AA2 /* libJJHideKeyboard.a */,
 				25B17B751D4CAD330007E2EE /* libJJCLLocation.a */,
 				25B6BBE41D45AD2F005B9C38 /* libJJRuninbackground.a */,
@@ -144,6 +152,7 @@
 		25BE8D541D2F79EE001463AC /* JJViewController */ = {
 			isa = PBXGroup;
 			children = (
+				25447BAF1D59C3AF0099F091 /* qrcode_scanline_qrcode.png */,
 				25BE8D581D2F79EE001463AC /* AppDelegate.h */,
 				25BE8D591D2F79EE001463AC /* AppDelegate.m */,
 				25BE8D5B1D2F79EE001463AC /* ViewController.h */,
@@ -236,6 +245,7 @@
 				25B6BBEC1D45AD9F005B9C38 /* mute.mp3 in Resources */,
 				25BE8D621D2F79EE001463AC /* Assets.xcassets in Resources */,
 				25B6BBED1D45AD9F005B9C38 /* mysong.mp3 in Resources */,
+				25447BB01D59C3AF0099F091 /* qrcode_scanline_qrcode.png in Resources */,
 				25BE8D601D2F79EE001463AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

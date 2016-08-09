@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>JJUILocalNotification.xcscheme</key>
+		<key>JJDelegate.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>23</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>65684A0D1D3FAAAE00317800</key>
+		<key>658249DC1D58C361008D65F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

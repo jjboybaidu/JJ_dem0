@@ -16,6 +16,7 @@
 #import "JJRuninbackground.h"
 #import "JJCLLocation.h"
 #import "JJDelegateAviewController.h"
+#import "JJScanner.h"
 
 @interface AppDelegate ()
 
@@ -42,9 +43,20 @@
     // [self setupJJCLLocation];
     
     // setupJJDelegateBviewController
-    [self setupJJDelegateBviewController];
+    // [self setupJJDelegateBviewController];
+    
+    // setupJJScannerViewController
+    [self setupJJScannerViewController];
     
     return YES;
+}
+
+// setupJJScannerViewController
+- (void)setupJJScannerViewController{
+    JJScanner *scannerViewController = [[JJScanner alloc]init];
+    // scannerViewController.view.backgroundColor = [UIColor grayColor];
+    // [scannerViewController startScan];
+    self.window.rootViewController = scannerViewController;
 }
 
 // setupJJDelegateBviewController
