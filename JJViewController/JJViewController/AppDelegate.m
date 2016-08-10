@@ -46,7 +46,7 @@
     // [self setupJJDelegateBviewController];
     
     // setupJJScannerViewController
-    [self setupJJScannerViewController];
+    // [self setupJJScannerViewController];
     
     return YES;
 }

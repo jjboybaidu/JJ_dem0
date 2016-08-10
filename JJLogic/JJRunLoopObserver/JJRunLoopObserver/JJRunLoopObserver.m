@@ -22,9 +22,42 @@
     
     // [self setupJJTimerRunLoopWithStatTime:0.01 interval:1];
     
+    // setupJJTimerUseCFRunLoop
+    // [self setupJJTimerUseCFRunLoop];
+    
+    // setupJJPerformselecterOne
+    // [self setupJJPerformselecterOne];
+    
+    // setupJJPerformselecterTwo
+    [self setupJJPerformselecterTwo];
+    
 }
 
-// setupJJTimerRunLoop 后台常驻Timer
+
+// setupJJPerformselecterOne
+- (void)setupJJPerformselecterOne{
+    NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(taskOne) object:nil];
+    [thread start];
+}
+-(void)taskOne{
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1]];
+    NSLog(@"taskOne is running");
+}
+
+
+// setupJJPerformselecterTwo
+- (void)setupJJPerformselecterTwo{
+    NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(taskTwo) object:nil];// 给子线程添加一个runloop，但是没有开启
+    [thread start];
+}
+-(void)taskTwo{
+    [NSRunLoop currentRunLoop]; // 只要调用currentRunLoop方法, 系统就会自动创建一个RunLoop, 添加到当前线程中
+    NSLog(@"taskTwo is running");
+}
+
+
+
+// setupJJTimerRunLoop 子线程：后台常驻运行runTimer方法；每个0.1秒执行一次方法；
 - (void)setupJJTimerRunLoop{
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
@@ -43,6 +76,26 @@
     
 }
 - (void)runTimer{
+    NSLog(@"runTimer__on thread %@",[NSThread currentThread]);
+}
+
+
+
+// setupJJTimerUseCFRunLoop
+- (void)setupJJTimerUseCFRunLoop{
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        CFRunLoopRef runLoop = CFRunLoopGetCurrent();
+        CFRunLoopTimerContext context = {0, NULL, NULL, NULL, NULL};
+        CFRunLoopTimerRef timer = CFRunLoopTimerCreate(kCFAllocatorDefault, 0.01, 0.1, 0, 0,&runTimerCallBack, &context);
+        
+        CFRunLoopAddTimer(runLoop, timer, kCFRunLoopDefaultMode);
+        
+        });
+}
+void runTimerCallBack(CFRunLoopTimerRef timer __unused, void *info){
+    
     NSLog(@"runTimer__on thread %@",[NSThread currentThread]);
 }
 
@@ -85,6 +138,7 @@
             CFRunLoopAddObserver(cfLoop, observer, kCFRunLoopDefaultMode);
         }
         [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(doFireTimer) userInfo:nil repeats:YES];
+        
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
     });
 
@@ -125,9 +179,13 @@ void myRunLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity 
 }
 
 
+
+
+
+
+//-----------------------------------------------------------------------------------------上面是可以使用的代码
 //-----------------------------------------------------------------------------------------
-//-----------------------------------------------------------------------------------------
-//-----------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------下面是用来参考的代码
 //-----------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------
@@ -216,7 +274,43 @@ void myRunLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity 
     
     
     
+    
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        // -----------------CFRunLoopRef
+        CFRunLoopRef runLoop = CFRunLoopGetCurrent();
+        
+        // -----------------CFRunLoopTimerContext
+        /* CFRunLoopTimerContext是一个结构体
+         
+         typedef struct {
+         CFIndex	version;
+         void *	info;
+         const void *(*retain)(const void *info);
+         void	(*release)(const void *info);
+         CFStringRef	(*copyDescription)(const void *info);
+         } CFRunLoopTimerContext;
+         
+         */
+        CFRunLoopTimerContext context = {0, NULL, NULL, NULL, NULL};
+        
+        // -----------------CFRunLoopTimerRef
+        /*
+         CFRunLoopTimerRef timer = CFRunLoopTimerCreate(CFAllocatorRef allocator, CFAbsoluteTime fireDate, CFTimeInterval interval, CFOptionFlags flags, CFIndex order, CFRunLoopTimerCallBack callout, CFRunLoopTimerContext *context)
+         */
+        CFRunLoopTimerRef timer = CFRunLoopTimerCreate(kCFAllocatorDefault, 0.1, 0.3, 0, 0,
+                                                       runTimer, &context);
+        
+        // -----------------CFRunLoopAddTimer
+        CFRunLoopAddTimer(runLoop, timer, kCFRunLoopCommonModes);
+        
+    });
 
+}
+
+void runTimer(CFRunLoopTimerRef timer __unused, void *info){
+    NSLog(@"runTimer__on thread %@",[NSThread currentThread]);
 }
 
 @end
