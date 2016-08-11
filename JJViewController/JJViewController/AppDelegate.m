@@ -17,6 +17,7 @@
 #import "JJCLLocation.h"
 #import "JJDelegateAviewController.h"
 #import "JJScanner.h"
+#import "JJBlockAviewController.h"
 
 @interface AppDelegate ()
 
@@ -48,7 +49,17 @@
     // setupJJScannerViewController
     // [self setupJJScannerViewController];
     
+    // setupJJBlockAviewController
+    [self setupJJBlockAviewController];
+    
     return YES;
+}
+
+- (void)setupJJBlockAviewController{
+    JJBlockAviewController *aviewcontroller = [[JJBlockAviewController alloc]init];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:aviewcontroller];
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
 }
 
 // setupJJScannerViewController
@@ -57,6 +68,7 @@
     // scannerViewController.view.backgroundColor = [UIColor grayColor];
     // [scannerViewController startScan];
     self.window.rootViewController = scannerViewController;
+    [self.window makeKeyAndVisible];
 }
 
 // setupJJDelegateBviewController

@@ -43,7 +43,7 @@
     // [self setupButton];
     
     // setup JJRunLoopObserver
-    [self setupJJRunLoopObserver];
+    // [self setupJJRunLoopObserver];
     
     // setup JJGCDTimer
     // [self setupJJGCDTimer];

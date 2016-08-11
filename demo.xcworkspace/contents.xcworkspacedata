@@ -39,6 +39,9 @@
       location = "container:"
       name = "JJLogic">
       <FileRef
+         location = "group:JJLogic/JJBlock/JJBlock.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:JJLogic/JJDelegate/JJDelegate.xcodeproj">
       </FileRef>
       <FileRef
