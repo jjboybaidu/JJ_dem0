@@ -8,6 +8,12 @@
       location = "container:"
       name = "JJUI">
       <FileRef
+         location = "group:JJUI/JJLeftView/JJLeftView.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJUI/JJQuartz2D/JJQuartz2D.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:JJUI/JJScanner/JJScanner.xcodeproj">
       </FileRef>
       <FileRef

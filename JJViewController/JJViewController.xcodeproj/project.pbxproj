@@ -31,6 +31,8 @@
 		25E069431D3708FC00EA8D65 /* libJJAlertController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E069421D3708FC00EA8D65 /* libJJAlertController.a */; };
 		25E069971D37705800EA8D65 /* libJJCountdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E069961D37705800EA8D65 /* libJJCountdown.a */; };
 		25EBE71F1D419B6800725321 /* libJJGCDTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EBE71E1D419B6800725321 /* libJJGCDTimer.a */; };
+		651B9DC01D5CB558004EAED7 /* libJJQuartz2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 651B9DBF1D5CB558004EAED7 /* libJJQuartz2D.a */; };
+		651B9DD71D5CBC5B004EAED7 /* libJJLeftView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 651B9DD61D5CBC5B004EAED7 /* libJJLeftView.a */; };
 		653296DE1D2FEB69001A6CDB /* libJJBLECentralManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 653296DD1D2FEB69001A6CDB /* libJJBLECentralManager.a */; };
 		65684A1D1D3FAAD900317800 /* libJJUILocalNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65684A1C1D3FAAD900317800 /* libJJUILocalNotification.a */; };
 		656D98781D5220B900A95AA2 /* libJJHideKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 656D98771D5220B900A95AA2 /* libJJHideKeyboard.a */; };
@@ -73,6 +75,8 @@
 		25E069421D3708FC00EA8D65 /* libJJAlertController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJAlertController.a; path = "../../../../Library/Developer/Xcode/DerivedData/demo-bwcorpcirxnitqgyooutxafvrgro/Build/Products/Debug-iphonesimulator/libJJAlertController.a"; sourceTree = "<group>"; };
 		25E069961D37705800EA8D65 /* libJJCountdown.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJCountdown.a; path = "../../../../Library/Developer/Xcode/DerivedData/demo-bwcorpcirxnitqgyooutxafvrgro/Build/Products/Debug-iphonesimulator/libJJCountdown.a"; sourceTree = "<group>"; };
 		25EBE71E1D419B6800725321 /* libJJGCDTimer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJGCDTimer.a; path = "../JJLogic/JJGCDTimer/build/Debug-iphoneos/libJJGCDTimer.a"; sourceTree = "<group>"; };
+		651B9DBF1D5CB558004EAED7 /* libJJQuartz2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJQuartz2D.a; path = "../JJUI/JJQuartz2D/build/Debug-iphoneos/libJJQuartz2D.a"; sourceTree = "<group>"; };
+		651B9DD61D5CBC5B004EAED7 /* libJJLeftView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJLeftView.a; path = "../JJUI/JJLeftView/build/Debug-iphoneos/libJJLeftView.a"; sourceTree = "<group>"; };
 		653296DD1D2FEB69001A6CDB /* libJJBLECentralManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJBLECentralManager.a; path = "../JJBLECentralManager/build/Debug-iphoneos/libJJBLECentralManager.a"; sourceTree = "<group>"; };
 		65684A1C1D3FAAD900317800 /* libJJUILocalNotification.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJUILocalNotification.a; path = "../JJUI/JJUILocalNotification/build/Debug-iphoneos/libJJUILocalNotification.a"; sourceTree = "<group>"; };
 		656D98771D5220B900A95AA2 /* libJJHideKeyboard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJHideKeyboard.a; path = "../JJUI/JJHideKeyboard/build/Debug-iphoneos/libJJHideKeyboard.a"; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651B9DD71D5CBC5B004EAED7 /* libJJLeftView.a in Frameworks */,
+				651B9DC01D5CB558004EAED7 /* libJJQuartz2D.a in Frameworks */,
 				259912281D5C4D3900AF0E13 /* libJJBlock.a in Frameworks */,
 				25447BB21D59C63D0099F091 /* libJJScanner.a in Frameworks */,
 				656D98781D5220B900A95AA2 /* libJJHideKeyboard.a in Frameworks */,
@@ -125,6 +131,8 @@
 		25BE8D491D2F79EE001463AC = {
 			isa = PBXGroup;
 			children = (
+				651B9DD61D5CBC5B004EAED7 /* libJJLeftView.a */,
+				651B9DBF1D5CB558004EAED7 /* libJJQuartz2D.a */,
 				259912271D5C4D3900AF0E13 /* libJJBlock.a */,
 				25447BB11D59C63D0099F091 /* libJJScanner.a */,
 				25447BA51D59B3F60099F091 /* libJJScanner.a */,

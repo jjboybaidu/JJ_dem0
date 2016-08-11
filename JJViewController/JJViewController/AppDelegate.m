@@ -18,6 +18,8 @@
 #import "JJDelegateAviewController.h"
 #import "JJScanner.h"
 #import "JJBlockAviewController.h"
+#import "JJQuartz2D.h"
+#import "JJLeftView.h"
 
 @interface AppDelegate ()
 
@@ -50,9 +52,34 @@
     // [self setupJJScannerViewController];
     
     // setupJJBlockAviewController
-    [self setupJJBlockAviewController];
+    // [self setupJJBlockAviewController];
+    
+    // setupQuartz2D
+    // [self setupQuartz2D];
+    
+    // setupJJLeftView
+    [self setupJJLeftView];
     
     return YES;
+}
+
+- (void)setupJJLeftView{
+    JJLeftView *leftView = [[JJLeftView alloc]init];
+    
+    self.window.rootViewController = leftView;
+    [self.window makeKeyAndVisible];
+}
+
+// setupQuartz2D
+- (void)setupQuartz2D{
+    JJQuartz2D *quartz2D = [[JJQuartz2D alloc]init];
+    UIViewController *tempViewController = [[UIViewController alloc]init];
+    tempViewController.view = quartz2D;
+    tempViewController.view.backgroundColor = [UIColor whiteColor];
+    
+    self.window.rootViewController = tempViewController;
+    [self.window makeKeyAndVisible];
+    
 }
 
 - (void)setupJJBlockAviewController{
