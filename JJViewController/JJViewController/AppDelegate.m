@@ -20,6 +20,7 @@
 #import "JJBlockAviewController.h"
 #import "JJQuartz2D.h"
 #import "JJLeftView.h"
+#import "JJAddressbook.h"
 
 @interface AppDelegate ()
 
@@ -58,9 +59,21 @@
     // [self setupQuartz2D];
     
     // setupJJLeftView
-    [self setupJJLeftView];
+    // [self setupJJLeftView];
+    
+    // setupJJAddressbook
+    [self setupJJAddressbook];
     
     return YES;
+}
+
+// setupJJAddressBook
+- (void)setupJJAddressbook{
+    JJAddressbook *addressViewController = [[JJAddressbook alloc]init];
+    
+    self.window.rootViewController = addressViewController;
+    [self.window makeKeyAndVisible];
+
 }
 
 - (void)setupJJLeftView{

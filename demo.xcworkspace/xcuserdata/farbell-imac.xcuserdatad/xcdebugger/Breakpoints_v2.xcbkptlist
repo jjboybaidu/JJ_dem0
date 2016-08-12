@@ -202,12 +202,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JJViewController/JJViewController/AppDelegate.m"
-            timestampString = "492589526.390176"
+            timestampString = "492662802.242979"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "-application:didReceiveLocalNotification:"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "-setupJJCountdown"
             landmarkType = "5">
             <Locations>
                <Location
@@ -336,6 +336,22 @@
             startingLineNumber = "23"
             endingLineNumber = "23"
             landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JJLogic/JJGCDTimer/JJGCDTimer/JJGCDSource.m"
+            timestampString = "492657686.03679"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-setupDispatchSourceTypeDataAdd"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

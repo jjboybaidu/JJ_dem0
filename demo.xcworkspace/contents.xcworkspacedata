@@ -90,6 +90,12 @@
          location = "group:JJLogic/JJBLECentralManager/JJBLECentralManager.xcodeproj">
       </FileRef>
       <FileRef
+         location = "group:JJLogic/JJAddressbookUI/JJAddressbookUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:JJLogic/JJAddressbookContacts/JJAddressbookContacts.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:JJLogic/JJAddressbook/JJAddressbook.xcodeproj">
       </FileRef>
    </Group>

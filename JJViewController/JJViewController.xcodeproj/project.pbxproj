@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2519A6091D3DAA2E00625502 /* libJJRunLoopObserver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2519A6081D3DAA2E00625502 /* libJJRunLoopObserver.a */; };
 		25296A801D3480B4000341B8 /* libJJShakeble.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25296A7F1D3480B4000341B8 /* libJJShakeble.a */; };
+		2540ED8A1D5D72CF00DDD2E7 /* JJAddressbook.m in Sources */ = {isa = PBXBuildFile; fileRef = 2540ED861D5D72CF00DDD2E7 /* JJAddressbook.m */; };
+		2540ED8B1D5D72CF00DDD2E7 /* JJAddressbookcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2540ED881D5D72CF00DDD2E7 /* JJAddressbookcell.m */; };
+		2540ED8C1D5D72CF00DDD2E7 /* JJAddressbookcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2540ED891D5D72CF00DDD2E7 /* JJAddressbookcell.xib */; };
 		25447BB21D59C63D0099F091 /* libJJScanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25447BB11D59C63D0099F091 /* libJJScanner.a */; };
 		255604431D34C2DB004B433D /* libJJCoreMotion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 255604421D34C2DB004B433D /* libJJCoreMotion.a */; };
 		255604621D35E144004B433D /* libJJNewFeature.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 255604611D35E144004B433D /* libJJNewFeature.a */; };
@@ -16,6 +19,9 @@
 		259912281D5C4D3900AF0E13 /* libJJBlock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 259912271D5C4D3900AF0E13 /* libJJBlock.a */; };
 		2599122B1D5C4DFE00AF0E13 /* JJBlockAviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2599122A1D5C4DFE00AF0E13 /* JJBlockAviewController.m */; };
 		2599122E1D5C4E0D00AF0E13 /* JJBlockBviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2599122D1D5C4E0D00AF0E13 /* JJBlockBviewController.m */; };
+		25AAC8A71D5D6EF600B2A607 /* libJJAddressbookUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AAC8A61D5D6EF600B2A607 /* libJJAddressbookUI.a */; };
+		25AAC8A91D5D6EF900B2A607 /* libJJAddressbookContacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AAC8A81D5D6EF900B2A607 /* libJJAddressbookContacts.a */; };
+		25AAC8AB1D5D6EFC00B2A607 /* libJJAddressbook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AAC8AA1D5D6EFC00B2A607 /* libJJAddressbook.a */; };
 		25B17B761D4CAD330007E2EE /* libJJCLLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B17B751D4CAD330007E2EE /* libJJCLLocation.a */; };
 		25B6BBB21D458CDC005B9C38 /* libJJNSOperation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B6BBB11D458CDC005B9C38 /* libJJNSOperation.a */; };
 		25B6BBEB1D45AD9F005B9C38 /* JJRuninbackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B6BBE81D45AD9F005B9C38 /* JJRuninbackground.m */; };
@@ -44,6 +50,11 @@
 /* Begin PBXFileReference section */
 		2519A6081D3DAA2E00625502 /* libJJRunLoopObserver.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJRunLoopObserver.a; path = "../JJLogic/JJRunLoopObserver/build/Debug-iphoneos/libJJRunLoopObserver.a"; sourceTree = "<group>"; };
 		25296A7F1D3480B4000341B8 /* libJJShakeble.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJShakeble.a; path = "../JJLogic/JJShakeble/build/Debug-iphoneos/libJJShakeble.a"; sourceTree = "<group>"; };
+		2540ED851D5D72CF00DDD2E7 /* JJAddressbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJAddressbook.h; sourceTree = "<group>"; };
+		2540ED861D5D72CF00DDD2E7 /* JJAddressbook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJAddressbook.m; sourceTree = "<group>"; };
+		2540ED871D5D72CF00DDD2E7 /* JJAddressbookcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJAddressbookcell.h; sourceTree = "<group>"; };
+		2540ED881D5D72CF00DDD2E7 /* JJAddressbookcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJAddressbookcell.m; sourceTree = "<group>"; };
+		2540ED891D5D72CF00DDD2E7 /* JJAddressbookcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJAddressbookcell.xib; sourceTree = "<group>"; };
 		25447BA51D59B3F60099F091 /* libJJScanner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJScanner.a; path = "../JJUI/JJScanner/build/Debug-iphoneos/libJJScanner.a"; sourceTree = "<group>"; };
 		25447BB11D59C63D0099F091 /* libJJScanner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJScanner.a; path = "../JJUI/JJScanner/build/Debug-iphoneos/libJJScanner.a"; sourceTree = "<group>"; };
 		255604421D34C2DB004B433D /* libJJCoreMotion.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJCoreMotion.a; path = "../JJLogic/JJCoreMotion/build/Debug-iphoneos/libJJCoreMotion.a"; sourceTree = "<group>"; };
@@ -54,6 +65,9 @@
 		2599122A1D5C4DFE00AF0E13 /* JJBlockAviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJBlockAviewController.m; sourceTree = "<group>"; };
 		2599122C1D5C4E0D00AF0E13 /* JJBlockBviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJBlockBviewController.h; sourceTree = "<group>"; };
 		2599122D1D5C4E0D00AF0E13 /* JJBlockBviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJBlockBviewController.m; sourceTree = "<group>"; };
+		25AAC8A61D5D6EF600B2A607 /* libJJAddressbookUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJAddressbookUI.a; path = "../JJLogic/JJAddressbookUI/build/Debug-iphoneos/libJJAddressbookUI.a"; sourceTree = "<group>"; };
+		25AAC8A81D5D6EF900B2A607 /* libJJAddressbookContacts.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJAddressbookContacts.a; path = "../JJLogic/JJAddressbookContacts/build/Debug-iphoneos/libJJAddressbookContacts.a"; sourceTree = "<group>"; };
+		25AAC8AA1D5D6EFC00B2A607 /* libJJAddressbook.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJAddressbook.a; path = "../JJLogic/JJAddressbook/build/Debug-iphoneos/libJJAddressbook.a"; sourceTree = "<group>"; };
 		25B17B751D4CAD330007E2EE /* libJJCLLocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJCLLocation.a; path = "../JJLogic/JJCLLocation/build/Debug-iphoneos/libJJCLLocation.a"; sourceTree = "<group>"; };
 		25B6BBB11D458CDC005B9C38 /* libJJNSOperation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJNSOperation.a; path = "../JJLogic/JJNSOperation/build/Debug-iphoneos/libJJNSOperation.a"; sourceTree = "<group>"; };
 		25B6BBE41D45AD2F005B9C38 /* libJJRuninbackground.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJJRuninbackground.a; path = "../../../../Library/Developer/Xcode/DerivedData/demo-bwcorpcirxnitqgyooutxafvrgro/Build/Products/Debug-iphonesimulator/libJJRuninbackground.a"; sourceTree = "<group>"; };
@@ -92,6 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25AAC8AB1D5D6EFC00B2A607 /* libJJAddressbook.a in Frameworks */,
+				25AAC8A91D5D6EF900B2A607 /* libJJAddressbookContacts.a in Frameworks */,
+				25AAC8A71D5D6EF600B2A607 /* libJJAddressbookUI.a in Frameworks */,
 				651B9DD71D5CBC5B004EAED7 /* libJJLeftView.a in Frameworks */,
 				651B9DC01D5CB558004EAED7 /* libJJQuartz2D.a in Frameworks */,
 				259912281D5C4D3900AF0E13 /* libJJBlock.a in Frameworks */,
@@ -131,6 +148,9 @@
 		25BE8D491D2F79EE001463AC = {
 			isa = PBXGroup;
 			children = (
+				25AAC8AA1D5D6EFC00B2A607 /* libJJAddressbook.a */,
+				25AAC8A81D5D6EF900B2A607 /* libJJAddressbookContacts.a */,
+				25AAC8A61D5D6EF600B2A607 /* libJJAddressbookUI.a */,
 				651B9DD61D5CBC5B004EAED7 /* libJJLeftView.a */,
 				651B9DBF1D5CB558004EAED7 /* libJJQuartz2D.a */,
 				259912271D5C4D3900AF0E13 /* libJJBlock.a */,
@@ -186,6 +206,11 @@
 				2599122A1D5C4DFE00AF0E13 /* JJBlockAviewController.m */,
 				2599122C1D5C4E0D00AF0E13 /* JJBlockBviewController.h */,
 				2599122D1D5C4E0D00AF0E13 /* JJBlockBviewController.m */,
+				2540ED851D5D72CF00DDD2E7 /* JJAddressbook.h */,
+				2540ED861D5D72CF00DDD2E7 /* JJAddressbook.m */,
+				2540ED871D5D72CF00DDD2E7 /* JJAddressbookcell.h */,
+				2540ED881D5D72CF00DDD2E7 /* JJAddressbookcell.m */,
+				2540ED891D5D72CF00DDD2E7 /* JJAddressbookcell.xib */,
 			);
 			path = JJViewController;
 			sourceTree = "<group>";
@@ -263,6 +288,7 @@
 				25BE8D651D2F79EE001463AC /* LaunchScreen.storyboard in Resources */,
 				25B6BBEC1D45AD9F005B9C38 /* mute.mp3 in Resources */,
 				25BE8D621D2F79EE001463AC /* Assets.xcassets in Resources */,
+				2540ED8C1D5D72CF00DDD2E7 /* JJAddressbookcell.xib in Resources */,
 				25B6BBED1D45AD9F005B9C38 /* mysong.mp3 in Resources */,
 				25BE8D601D2F79EE001463AC /* Main.storyboard in Resources */,
 			);
@@ -277,12 +303,14 @@
 			files = (
 				2599122B1D5C4DFE00AF0E13 /* JJBlockAviewController.m in Sources */,
 				658249F41D58C405008D65F3 /* JJDelegateBviewController.m in Sources */,
+				2540ED8A1D5D72CF00DDD2E7 /* JJAddressbook.m in Sources */,
 				658249F31D58C405008D65F3 /* JJDelegateAviewController.m in Sources */,
 				2599122E1D5C4E0D00AF0E13 /* JJBlockBviewController.m in Sources */,
 				25BE8D5D1D2F79EE001463AC /* ViewController.m in Sources */,
 				25BE8D5A1D2F79EE001463AC /* AppDelegate.m in Sources */,
 				25B6BBEB1D45AD9F005B9C38 /* JJRuninbackground.m in Sources */,
 				25BE8D571D2F79EE001463AC /* main.m in Sources */,
+				2540ED8B1D5D72CF00DDD2E7 /* JJAddressbookcell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

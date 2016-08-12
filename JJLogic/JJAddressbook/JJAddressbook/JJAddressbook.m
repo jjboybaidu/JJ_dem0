@@ -7,11 +7,12 @@
 //
 
 #import "JJAddressbook.h"
+#import "JJAddressbookcell.h"
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 
 @interface JJAddressbook()<ABPeoplePickerNavigationControllerDelegate,UISearchBarDelegate,ABNewPersonViewControllerDelegate,UISearchControllerDelegate,UISearchResultsUpdating,ABPersonViewControllerDelegate>
-@property(nonatomic,strong)NSArray *personAddressBook;
+@property(nonatomic,strong) NSArray *personAddressBook;
 @property(strong, nonatomic) UISearchController *searchController;
 
 @end
@@ -111,7 +112,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    FBContactCell *cell = [FBContactCell cell:tableView];
+    JJAddressbookcell *cell = [JJAddressbookcell cell:tableView];
     
     [self setupCellData:indexPath tableViewCell:cell];
     
@@ -120,7 +121,7 @@
 
 #pragma mark - cell赋值（没有模型）
 
-- (void)setupCellData:(NSIndexPath *)indexPath tableViewCell:(FBContactCell *)cell{
+- (void)setupCellData:(NSIndexPath *)indexPath tableViewCell:(JJAddressbookcell *)cell{
     
     ABRecordRef thisPerson = CFBridgingRetain([self.personAddressBook objectAtIndex:[indexPath row]]);
     

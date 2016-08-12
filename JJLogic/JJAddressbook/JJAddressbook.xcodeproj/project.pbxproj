@@ -26,12 +26,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2540ED841D5D722400DDD2E7 /* JJAddressbookcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJAddressbookcell.xib; sourceTree = "<group>"; };
 		653297851D309CDA001A6CDB /* libJJAddressbook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJAddressbook.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		653297881D309CDA001A6CDB /* JJAddressbook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJAddressbook.h; sourceTree = "<group>"; };
 		6532978A1D309CDA001A6CDB /* JJAddressbook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJAddressbook.m; sourceTree = "<group>"; };
 		653297911D309D9D001A6CDB /* JJAddressbookcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJAddressbookcell.h; sourceTree = "<group>"; };
 		653297921D309D9D001A6CDB /* JJAddressbookcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJAddressbookcell.m; sourceTree = "<group>"; };
-		653297931D309D9D001A6CDB /* JJAddressbookcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJAddressbookcell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 				6532978A1D309CDA001A6CDB /* JJAddressbook.m */,
 				653297911D309D9D001A6CDB /* JJAddressbookcell.h */,
 				653297921D309D9D001A6CDB /* JJAddressbookcell.m */,
-				653297931D309D9D001A6CDB /* JJAddressbookcell.xib */,
+				2540ED841D5D722400DDD2E7 /* JJAddressbookcell.xib */,
 			);
 			path = JJAddressbook;
 			sourceTree = "<group>";
@@ -257,6 +257,7 @@
 				653297901D309CDA001A6CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

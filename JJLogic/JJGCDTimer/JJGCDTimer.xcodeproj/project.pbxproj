@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25AAC86B1D5D500A00B2A607 /* JJGCDSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 25AAC8691D5D500A00B2A607 /* JJGCDSource.h */; };
+		25AAC86C1D5D500A00B2A607 /* JJGCDSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AAC86A1D5D500A00B2A607 /* JJGCDSource.m */; };
 		25EBE7131D419A2E00725321 /* JJGCDTimer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25EBE7121D419A2E00725321 /* JJGCDTimer.h */; };
 		25EBE7151D419A2E00725321 /* JJGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EBE7141D419A2E00725321 /* JJGCDTimer.m */; };
 		25EBE71C1D419A9200725321 /* JJGCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EBE7121D419A2E00725321 /* JJGCDTimer.h */; };
@@ -26,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		25AAC8691D5D500A00B2A607 /* JJGCDSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJGCDSource.h; sourceTree = "<group>"; };
+		25AAC86A1D5D500A00B2A607 /* JJGCDSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJGCDSource.m; sourceTree = "<group>"; };
 		25EBE70F1D419A2E00725321 /* libJJGCDTimer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJJGCDTimer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EBE7121D419A2E00725321 /* JJGCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJGCDTimer.h; sourceTree = "<group>"; };
 		25EBE7141D419A2E00725321 /* JJGCDTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJGCDTimer.m; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			children = (
 				25EBE7121D419A2E00725321 /* JJGCDTimer.h */,
 				25EBE7141D419A2E00725321 /* JJGCDTimer.m */,
+				25AAC8691D5D500A00B2A607 /* JJGCDSource.h */,
+				25AAC86A1D5D500A00B2A607 /* JJGCDSource.m */,
 			);
 			path = JJGCDTimer;
 			sourceTree = "<group>";
@@ -74,6 +80,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25AAC86B1D5D500A00B2A607 /* JJGCDSource.h in Headers */,
 				25EBE71C1D419A9200725321 /* JJGCDTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25EBE7151D419A2E00725321 /* JJGCDTimer.m in Sources */,
+				25AAC86C1D5D500A00B2A607 /* JJGCDSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
