@@ -14,7 +14,7 @@
 
 @implementation JJSqlite3
 
-// creat
+// 创建数据库表：根据doorID和appID
 + (void)creatSqliteTimeTableWithDoorID:(NSString *)doorID appID:(NSString *)appID{
     NSData *currentTime = [self formatTotNSDataTimeWithCurrentTime];
     
@@ -63,7 +63,7 @@
     }
 }
 
-// get
+// SQLITE：获取数据库表
 + (NSData*)getDataOfTimeTable{
     // SQLIET_FILE
         BOOL success;
@@ -100,6 +100,7 @@
     return mutableData;
 }
 
+// SQLITE：创建数据库表
 + (void)creatSqliteTimeTable {
     
     // current time
@@ -161,6 +162,7 @@
     
 }
 
+// SQLITE：删除限制的前几条
 + (void)handleDeleteTimeDataWithCount:(int)dataCount{
     
     // SQLIET_FILE
@@ -190,6 +192,7 @@
     
 }
 
+// SQLITE：获取限制的前几条
 + (NSData*)getDataOfTimeTableWithLimitCount:(int)dataCount{
     // SQLIET_FILE
         BOOL success;
@@ -256,7 +259,7 @@
     return mutableData;
 }
 
-// get count of time table
+// SQLITE:获取数据库的条目总数
 + (int)getCountOfSqliteTimeTable{
     // SQLIET_FILE
         BOOL success;
@@ -288,7 +291,7 @@
     return count;
 }
 
-// Format current time to NSData Time
+// 获取当前的时间：拼接成固定格式
 + (NSData *)formatTotNSDataTimeWithCurrentTime{
     NSMutableData* mutableTimeData = [NSMutableData data];
     
